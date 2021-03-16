@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CustomFileBrowserProvider>
+  <Paths>
+    <genericHandlerPath>FileSystemHandler.ashx</genericHandlerPath>
+  </Paths>
+  <Mappings>
+    <Mapping>
+      <PhysicalPath>
+        <![CDATA[D:\PDF_DIR\BIFP]]>
+        
+      </PhysicalPath>
+      <VirtualPath><![CDATA[AppDir/]]></VirtualPath>
+    </Mapping>
+    
+    <Mapping>
+      <PhysicalPath>
+        <![CDATA[D:\PDF_DIR\BIFP\SG_EXT_DATA_EPIC\]]>       
+      </PhysicalPath>
+      <VirtualPath><![CDATA[Epic/]]></VirtualPath>
+    </Mapping>
+   
+    <Mapping>
+      <PhysicalPath>
+        <![CDATA[D:\PDF_DIR\BIFP\SG_AMOGH_DATA_IMPORT\]]>
+        
+      </PhysicalPath>
+      <VirtualPath><![CDATA[Amogh/]]></VirtualPath>
+    </Mapping>
+  </Mappings>
+</CustomFileBrowserProvider>

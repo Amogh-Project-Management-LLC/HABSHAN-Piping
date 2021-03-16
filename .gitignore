@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/BIFP-PIPING/v16/Server/sqlite3
+/.vs/BIFP-PIPING/config
+/BIFP-PIPING.sln
+/.vs/BIFP-PIPING/v15/Server/sqlite3/db.lock
+/packages
+/SessionData/yf0medy1scaivak1tvfw3lkv/3459.png
+/SessionData
+/TestPackage/Reports/TestPkg_Weld_Inspection_Summary_New - Backup (3).rdlc
+/Home/DashboardAll - Copy.aspx
+/Isome
+/.vs/BIFP-PIPING/v16
+/Bin
+/App_Data/RadUploadTemp

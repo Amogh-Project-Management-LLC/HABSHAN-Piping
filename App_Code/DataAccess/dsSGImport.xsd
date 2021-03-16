@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsSGImport" targetNamespace="http://tempuri.org/dsSGImport.xsd" xmlns:mstns="http://tempuri.org/dsSGImport.xsd" xmlns="http://tempuri.org/dsSGImport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ipmsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ipmsConnectionString (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ipmsConnectionString.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VIEW_SG_IMPORT_ERRORTableAdapter" GeneratorDataComponentClassName="VIEW_SG_IMPORT_ERRORTableAdapter" Name="VIEW_SG_IMPORT_ERROR" UserDataComponentName="VIEW_SG_IMPORT_ERRORTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ipmsConnectionString (Web.config)" DbObjectName="AMG_PIPING.VIEW_SG_IMPORT_ERROR" DbObjectType="View" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        PROJECT_ID, FILE_NAME, IMPORT_TYPE
+FROM            VIEW_SG_IMPORT_ERROR</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PROJECT_ID" DataSetColumn="PROJECT_ID" />
+              <Mapping SourceColumn="FILE_NAME" DataSetColumn="FILE_NAME" />
+              <Mapping SourceColumn="IMPORT_TYPE" DataSetColumn="IMPORT_TYPE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsSGImport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsSGImport" msprop:Generator_UserDSName="dsSGImport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VIEW_SG_IMPORT_ERROR" msprop:Generator_TableClassName="VIEW_SG_IMPORT_ERRORDataTable" msprop:Generator_TableVarName="tableVIEW_SG_IMPORT_ERROR" msprop:Generator_TablePropName="VIEW_SG_IMPORT_ERROR" msprop:Generator_RowDeletingName="VIEW_SG_IMPORT_ERRORRowDeleting" msprop:Generator_RowChangingName="VIEW_SG_IMPORT_ERRORRowChanging" msprop:Generator_RowEvHandlerName="VIEW_SG_IMPORT_ERRORRowChangeEventHandler" msprop:Generator_RowDeletedName="VIEW_SG_IMPORT_ERRORRowDeleted" msprop:Generator_UserTableName="VIEW_SG_IMPORT_ERROR" msprop:Generator_RowChangedName="VIEW_SG_IMPORT_ERRORRowChanged" msprop:Generator_RowEvArgName="VIEW_SG_IMPORT_ERRORRowChangeEvent" msprop:Generator_RowClassName="VIEW_SG_IMPORT_ERRORRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROJECT_ID" msprop:Generator_ColumnVarNameInTable="columnPROJECT_ID" msprop:Generator_ColumnPropNameInRow="PROJECT_ID" msprop:Generator_ColumnPropNameInTable="PROJECT_IDColumn" msprop:Generator_UserColumnName="PROJECT_ID" type="xs:decimal" />
+              <xs:element name="FILE_NAME" msprop:Generator_ColumnVarNameInTable="columnFILE_NAME" msprop:Generator_ColumnPropNameInRow="FILE_NAME" msprop:Generator_ColumnPropNameInTable="FILE_NAMEColumn" msprop:Generator_UserColumnName="FILE_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IMPORT_TYPE" msprop:Generator_ColumnVarNameInTable="columnIMPORT_TYPE" msprop:Generator_ColumnPropNameInRow="IMPORT_TYPE" msprop:Generator_ColumnPropNameInTable="IMPORT_TYPEColumn" msprop:Generator_UserColumnName="IMPORT_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

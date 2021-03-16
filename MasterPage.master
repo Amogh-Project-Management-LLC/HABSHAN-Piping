@@ -1,0 +1,559 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Amogh_MasterPage" EnableTheming="true" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="CSS/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico" />
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <telerik:RadCodeBlock runat="server">
+        <style type="text/css">
+            html, body, form {
+                height: 100%;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .table_style {
+                border: none;
+                padding: 0px;
+                border-spacing: 0px;
+                margin: 0px;
+            }
+
+
+            #grad {
+                background-color: #c1d7fc;
+                background: -webkit-linear-gradient(left, #96baf4, #dfeafb); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(right, #96baf4, #dfeafb); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(right, #96baf4, #dfeafb); /* For Firefox 3.6 to 15 */
+                background: linear-gradient(to right, #96baf4, #dfeafb); /* Standard syntax */
+            }
+
+            .RadWindowMange {
+                z-index: 8000;
+            }
+
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 8000;
+                top: 0;
+                left: 0;
+                overflow-x: hidden;
+                transition: 0.5s;
+                top: 90px;
+            }
+
+                .sidenav a {
+                    text-decoration: none;
+                    color: #FF7133;
+                    display: block;
+                    transition: 0.3s;
+                }
+
+                    .sidenav a:hover {
+                        color: #FFC300;
+                    }
+
+                .sidenav .closebtn {
+                    position: absolute;
+                    top: 0;
+                    right: 15px;
+                    font-size: 36px;
+                    margin-left: 50px;
+                }
+
+            @media screen and (max-height: 450px) {
+                .sidenav {
+                    padding-top: 15px;
+                }
+
+                    .sidenav a {
+                        font-size: 18px;
+                    }
+            }
+
+            #LoadingBackground {
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                overflow: hidden;
+                background-color: #000;
+                filter: alpha(opacity=50);
+                opacity: 0.5;
+                z-index: 1000;
+            }
+
+            .MessagePanelDiv {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 35%;
+                z-index: 99;
+                font-size: 15px;
+            }
+        </style>
+        <script lang="javascript" type="text/javascript">
+            function OpenModual(page_url, dlgw, dlgh) {
+                var ReturnedValue = showModalDialog(page_url, "Passed String",
+                    "dialogWidth:" + dlgw + "px; dialogHeight:" + dlgh + "px; status:no; center:yes");
+            }
+            //  //window.document.title = "Amogh Piping";
+
+            document.addEventListener('click', function (event) {
+                if (!OpenSliderId.contains(event.target))
+                    if (RadPanelSlider.contains(event.target) && !CloseSliderID.contains(event.target)) {
+                        document.getElementById("RadPanelSlider").style.width = "250px";
+                    }
+                    else {
+                        document.getElementById("RadPanelSlider").style.width = "0";
+                    }
+            });
+            function OpenSliderClick() {
+                document.getElementById("RadPanelSlider").style.width = "250px";
+            }
+
+            function CloseSliderClick() {
+                document.getElementById("RadPanelSlider").style.width = "0";
+            }
+            $(document).on("mouseover", function (e) {
+                if (e.pageX <= 0) {
+                    document.getElementById("RadPanelSlider").style.width = "250px";
+                }
+                else if (e.pageX > 250) {
+                    document.getElementById("RadPanelSlider").style.width = "0";
+                }
+            });
+            window.onkeyup = function (event) {
+                if (event.keyCode == 27) {
+                    document.getElementById("PanelDiv").style.visibility = "hidden";
+                }
+            }
+        </script>
+        <script type="text/javascript">
+            function Rebind_Parent(sender, args) {
+                var temp = new Array();
+                var str = document.getElementById('RadGridListHiddenField').value;
+                var str2 = document.getElementById('AspGridListHiddenField').value;
+                var str3 = document.getElementById('ButtonListHiddenField').value;
+
+                temp = str.split(",");
+                if (str.length > 0) {
+                    for (var i = 0; i < temp.length; i++) {
+                        var masterTable = $find(temp[i]).get_masterTableView();
+                        masterTable.rebind();
+                    }
+                }
+
+                if (str2.length > 0) {
+                    document.location.reload();
+                }
+                temp1 = str3.split(",");
+                if (str3.length > 0) {
+                    for (var i = 0; i < temp1.length; i++) {
+                        var buttonClick = document.getElementById(temp1[i]).click();
+                    }
+                }
+
+            }
+
+        </script>
+    </telerik:RadCodeBlock>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnableScriptCombine="true" OutputCompression="AutoDetect"
+            AsyncPostBackTimeout="900">
+        </telerik:RadScriptManager>
+        <telerik:RadWindowManager ID="RadWindowManager1" runat="server" ReloadOnShow="true" CssClass="RadWindowMange" Modal="true"
+            VisibleStatusbar="false" OnClientClose="Rebind_Parent">
+        </telerik:RadWindowManager>
+        <telerik:RadStyleSheetManager runat="server" EnableStyleSheetCombine="true" />
+
+
+        <!--Start Show Session Expire Warning Popup here -->
+        <div class="modal fade" id="session-expire-warning-modal" aria-hidden="true" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Session Expire Warning</h4>
+                    </div>
+                    <div class="modal-body">
+                        Your session will expire in <span id="seconds-timer"></span>seconds. Do you want to extend the session?
+                    </div>
+                    <div class="modal-footer">
+                        <button id="btnOk" type="button" class="btn btn-default" style="padding: 6px 12px; margin-bottom: 0; font-size: 14px; font-weight: normal; border: 1px solid transparent; border-radius: 4px; background-color: #428bca; color: #FFF;">Ok</button>
+                        <button id="btnSessionExpiredCancelled" type="button" class="btn btn-default" data-dismiss="modal" style="padding: 6px 12px; margin-bottom: 0; font-size: 14px; font-weight: normal; border: 1px solid transparent; border-radius: 4px; background-color: #428bca; color: #FFF;">Cancel</button>
+                        <button id="btnLogoutNow" type="button" class="btn btn-default" style="padding: 6px 12px; margin-bottom: 0; font-size: 14px; font-weight: normal; border: 1px solid transparent; border-radius: 4px; background-color: #428bca; color: #FFF;">Logout now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Show Session Expire Warning Popup here -->
+        <!--Start Show Session Expire Popup here -->
+        <div class="modal fade" id="session-expired-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Session Expired</h4>
+                    </div>
+                    <div class="modal-body">
+                        Your session is expired.
+                    </div>
+                    <div class="modal-footer">
+                        <button id="btnExpiredOk" onclick="sessionExpiredRedirect()" type="button" class="btn btn-primary" data-dismiss="modal" style="padding: 6px 12px; margin-bottom: 0; font-size: 14px; font-weight: normal; border: 1px solid transparent; border-radius: 4px; background-color: #428bca; color: #FFF;">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/sessionTimeout.js"></script>
+        <!-- This will init session -->
+        <script>
+            initSessionMonitor();
+        </script>
+
+        <!-- This script is only for show cound down timer on HTML Page -->
+
+        <div id="grad">
+            <table style="width: 100%; height: 25px;">
+                <tr>
+                    <td style="width: 30px; padding-left: 5px;">
+                        <a href="../Home/Default.aspx">
+                            <img src="../Images/new/home-icon.png" style="border: none;" />
+                        </a>
+                    </td>
+                    <td style="padding-left: 10px; text-align: left;">
+                        <asp:Label ID="projectLabel" runat="server"></asp:Label>
+                    </td>
+
+                    <%-- <td style="padding-left: 10px; text-align: left;">
+                        <h4>Please wait for <span id="count"></span>seconds to view session timeout popup.</h4>
+                    </td>--%>
+
+                    <td>
+                        <asp:UpdateProgress ID="UpdateProgress1" runat="server" DisplayAfter="10">
+                            <ProgressTemplate>
+                                <div id="LoadingBackground"></div>
+                                <img alt="loading..." src="../Images/ajax-loading.gif" title="loading..."
+                                    style="width: 100px; height: 100px; position: absolute; top: 30%; left: 43%; padding: 10px; z-index: 1001;" />
+                            </ProgressTemplate>
+                        </asp:UpdateProgress>
+                    </td>
+                    <td style="width: 100px; text-align: center;">
+                        <telerik:RadDropDownList Enabled="false" ID="ddLang" runat="server" Width="100px" AutoPostBack="true"
+                            OnDataBound="ddLang_DataBound" OnSelectedIndexChanged="ddLang_SelectedIndexChanged" CausesValidation="False" Visible="false">
+                            <Items>
+                                <telerik:DropDownListItem Value="en" Text="English" />
+                                <telerik:DropDownListItem Value="vi" Text="Vietnamese" />
+                                <telerik:DropDownListItem Value="ja" Text="Japanese" />
+                            </Items>
+                        </telerik:RadDropDownList>
+                        <telerik:RadSkinManager ID="RadSkinManager1" runat="server" ShowChooser="true" OnLoad="RadSkinManager1_Load"
+                            PersistenceMode="session" OnPreRender="RadSkinManager1_PreRender">
+                        </telerik:RadSkinManager>
+                    </td>
+                    <%--To stop redirect to another page when click Enter in Edit mode--%>
+                    <td style="display: none">
+                        <asp:ImageButton ID="Dummy" runat="server" />
+
+                    </td>
+                    <td style="width: 40px; padding-right: 3px; padding-left: 3px;">
+                        <asp:ImageButton ID="SubconWiseDashBoard" runat="server" ImageUrl="~/Images/new/home-icon.png" ImageAlign="Middle" CausesValidation="false"
+                            ToolTip="Sucon Wise" OnClick="SubconWiseDashBoard_Click" />
+
+                    </td>
+                    <td style="width: 40px; padding-right: 3px; padding-left: 3px;">
+                        <asp:ImageButton ID="ImageButtonReports" runat="server" ImageUrl="~/Images/icons/report-icon.png" ImageAlign="Middle" CausesValidation="false"
+                            ToolTip="Reports" OnClick="ImageButtonReports_Click" />
+                    </td>
+                    <%-- <td style="width: 40px; padding-right: 3px; padding-left: 3px;">
+                        <asp:ImageButton ID="ImageButtonCharts" runat="server" ImageUrl="~/Images/icons/chart-icon.png" ImageAlign="Middle"
+                            ToolTip="Charts" OnClick="ImageButtonCharts_Click" />
+                    </td>--%>
+                    <td style="width: 40px; padding-right: 3px; padding-left: 3px;">
+                        <asp:ImageButton ID="ImageButtonEntry" runat="server" ImageUrl="~/Images/dataentry.png" ImageAlign="Middle" CausesValidation="false"
+                            ToolTip="Data Entry" OnClick="ImageButtonEntry_Click" />
+                    </td>
+
+                    <td style="width: 40px; padding-right: 3px; padding-left: 3px;">
+                        <asp:ImageButton ID="ImageButtonMaterialCatalog" runat="server" ImageUrl="~/Images/icons/material-catalog.png" ImageAlign="Middle" CausesValidation="false"
+                            OnClick="ImageButtonMaterialCatalog_Click" ToolTip="Material Catalog" />
+                    </td>
+                    <td style="width: 40px; padding-right: 3px; padding-left: 3px;">
+                        <asp:ImageButton ID="ImageButtonSetting" runat="server" ImageUrl="~/Images/icons/Setting-icon.png" OnClick="ImageButtonSetting_Click" ToolTip="Setting" CausesValidation="false" />
+                    </td>
+                    <td style="width: 40px; padding-right: 3px; padding-left: 3px;">
+                        <asp:ImageButton ID="ImageButtonUpdates" runat="server" ImageUrl="~/Images/icons/database.png" OnClick="ImageButtonUpdates_Click" ToolTip="Amogh Updates" CausesValidation="false" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="MasterHeader">
+            <table class="table_style" style="width: 100%;">
+                <tr>
+                    <td style="width: 10px;" id="OpenSliderId">
+                        <span style="font-size: 30px; cursor: pointer;" onclick="OpenSliderClick()">&#9776;</span>
+                    </td>
+                    <td style="width: 33%">
+                        <img src="../Images/new/master-header.png" />
+                    </td>
+                    <td style="padding-right: 0px; width: 33%; text-align: center; width: 300px">
+                        <asp:UpdatePanel ID="UpdatePanel3" runat="server">
+                            <ContentTemplate>
+                                <asp:Label ID="headingMessageLabel" runat="server" Font-Size="X-Large" ForeColor="Gray" Font-Bold="true"></asp:Label>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </td>
+
+                    <td style="padding-right: 10px; text-align: right; width: 150px">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Company_Logo/Client_Logo.png" />
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <table style="width: 100%; border-width: 3px; border-color: gainsboro; border-style: solid;">
+                <tr>
+                    <td id="navigation_left">
+                        <div style="height: 100%;" id="RadPanelSlider" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="CloseSliderClick() " id="CloseSliderID"></a>
+                            <telerik:RadPanelBar runat="server" ID="RadPanelBar1" Height="450px" Width="250px" ExpandMode="FullExpandedItem" AllowCollapseAllItems="true"
+                                PersistStateInCookie="True" CookieName="RadMenuAmogh2014">
+                                <Items>
+                                    <telerik:RadPanelItem Text="Document/ Revision Control" Expanded="true" Value="1">
+                                        <Items>
+                                            <telerik:RadPanelItem Text="Line MTO" NavigateUrl="Redirect/Redirect.aspx?page=/Isome/LineMTOSummary.aspx" Value="1.1"></telerik:RadPanelItem>
+                                            <telerik:RadPanelItem Text="Transmittal Log" NavigateUrl="Redirect/Redirect.aspx?page=/Isome/IsomeTransSelect.aspx" Value="1.2" />
+                                            <telerik:RadPanelItem Text="Isometric List" NavigateUrl="Redirect/Redirect.aspx?page=/Isome/IsomeIndex.aspx" Value="1.3" />
+                                            <telerik:RadPanelItem Text="Stop Work Notice" NavigateUrl="Redirect/Redirect.aspx?page=/Isome/SWN.aspx" Value="1.4" />
+                                            <telerik:RadPanelItem Text="Release Note" NavigateUrl="Redirect/Redirect.aspx?page=/Isome/REL.aspx" Value="1.5" />
+                                            <telerik:RadPanelItem Text="Shop Change Request" NavigateUrl="Redirect/Redirect.aspx?page=/Isome/SCR_Request.aspx" Value="1.6" />
+                                            <telerik:RadPanelItem Text="Field Change Request" NavigateUrl="Redirect/Redirect.aspx?page=/Isome/FCR_Request.aspx" Value="1.7" />
+                                            <telerik:RadPanelItem Text="Material Impact" NavigateUrl="Redirect/Redirect.aspx?page=/RevisionControl/MatImpact.aspx" Value="1.8" />
+                                            <telerik:RadPanelItem Text="Weld Impact" NavigateUrl="Redirect/Redirect.aspx?page=/RevisionControl/WeldImpact.aspx" Value="1.9" />
+                                            <telerik:RadPanelItem Text="Hold Requests" NavigateUrl="Redirect/Redirect.aspx?page=/Isome/HoldRequests.aspx" Value="1.10"></telerik:RadPanelItem>
+                                            <telerik:RadPanelItem Text="Barcode Import" NavigateUrl="Redirect/Redirect.aspx?page=/Isome/barcodeImport.aspx" Value="1.11"></telerik:RadPanelItem>
+                                            <%-- <telerik:RadPanelItem Text="FCRI" NavigateUrl="~/RevisionControl/FCRI.aspx" />--%>
+                                        </Items>
+                                    </telerik:RadPanelItem>
+                                    <%-- <telerik:RadPanelItem Text="MR/ Procurement">
+                                        <Items>
+                                            <telerik:RadPanelItem Text="Material Requisition" NavigateUrl="Material/MR.aspx"></telerik:RadPanelItem>
+                                            <telerik:RadPanelItem Text="Purchase Order" NavigateUrl="~/Material/PO.aspx" />
+                                            <telerik:RadPanelItem Text="PO Packing List" NavigateUrl="~/Procurement/PoPackingList.aspx" />
+                                            <telerik:RadPanelItem Text="PO Vendor Data" NavigateUrl="~/Procurement/POVendorData.aspx"></telerik:RadPanelItem>
+                                        </Items>
+                                    </telerik:RadPanelItem>--%>
+                                    <%--    <telerik:RadPanelItem Text="Material Control">
+                                        <Items>
+                                            <telerik:RadPanelItem Text="Material Catalog" NavigateUrl="~/Material/MaterialStock.aspx" />
+                                            <telerik:RadPanelItem Text="Material Status Report" NavigateUrl="Material/MaterialStatusReport.aspx"></telerik:RadPanelItem>
+                                            <telerik:RadPanelItem Text="Material Receive (MRV)" NavigateUrl="~/Material/MatReceive.aspx" />
+                                            <telerik:RadPanelItem Text="Material Inspection (MRIR)" NavigateUrl="~/Material/MatInsp.aspx" />
+                                            <telerik:RadPanelItem Text="ESD" NavigateUrl="~/Material/MatExceptionRep.aspx" />
+                                            <telerik:RadPanelItem Text="Additional MIV" NavigateUrl="~/Material/Additional_Mat.aspx" />
+                                            <telerik:RadPanelItem Text="Material Return" NavigateUrl="~/Material/MatReturn.aspx" />
+                                            <telerik:RadPanelItem Text="Material Request" NavigateUrl="~/Material/MaterialRequest.aspx"></telerik:RadPanelItem>
+                                            <telerik:RadPanelItem Text="Material Transfer (MTN)" NavigateUrl="~/Material/Mat_Transf.aspx" />
+                                            <telerik:RadPanelItem Text="MTN Receive" NavigateUrl="~/Material/MTNReceive.aspx" />
+                                            <telerik:RadPanelItem Text="Material Substitution" NavigateUrl="~/Material/MaterialSubstitution.aspx"></telerik:RadPanelItem>
+                                            <telerik:RadPanelItem Text="Material Reserve" NavigateUrl="~/Material/MaterialReserve.aspx"></telerik:RadPanelItem>
+                                            <telerik:RadPanelItem Text="Material/Spool Reuse" NavigateUrl="~/Material/MaterialReuse.aspx"></telerik:RadPanelItem>
+                                            <telerik:RadPanelItem Text="Pipe Remain Store" NavigateUrl="~/CuttingPlan/PipeRemains.aspx" />
+                                            <telerik:RadPanelItem Text="Quarantine" NavigateUrl="~/Material/MaterialQuarantine.aspx" />
+                                            <telerik:RadPanelItem Text="Heat Numbers" NavigateUrl="~/HeatNo/HeatNoIndex.aspx" />
+                                            <telerik:RadPanelItem Text="Test Certificates" NavigateUrl="~/HeatNo/TC_Index.aspx" />
+                                        </Items>
+                                    </telerik:RadPanelItem>--%>
+
+                                    <telerik:RadPanelItem Text="Job-Card" Value="2">
+                                        <Items>
+                                            <telerik:RadPanelItem Text="Spool Fabrication Jobcard" NavigateUrl="Redirect/Redirect.aspx?page=/SpoolFabJobCard/JobCard.aspx" Value="2.1" />
+                                            <telerik:RadPanelItem Text="Fabrication Jobcard MIV" NavigateUrl="Redirect/Redirect.aspx?page=/SpoolFabJobCard/JC_MIV.aspx" Value="2.2" />
+                                            <telerik:RadPanelItem Text="Cold Bending Jobcard" NavigateUrl="Redirect/Redirect.aspx?page=/ColdBending/ColdBending.aspx" Value="2.3" />
+                                            <telerik:RadPanelItem Text="Spool Hydro Test" NavigateUrl="Redirect/Redirect.aspx?page=/HydroTest/HydroTest.aspx" Value="2.4" />
+                                            <telerik:RadPanelItem Text="Material Substitution" NavigateUrl="Redirect/Redirect.aspx?page=/Material/MaterialSubstitution.aspx" Value="2.5"></telerik:RadPanelItem>
+                                        </Items>
+                                    </telerik:RadPanelItem>
+
+                                    <telerik:RadPanelItem Text="Welding and NDT" Value="3">
+                                        <Items>
+                                            <telerik:RadPanelItem Text="Daily Fitup & Welding" NavigateUrl="Redirect/Redirect.aspx?page=/WeldingInspec/PipingDFWR.aspx" Value="3.1" />
+                                            <%--<telerik:RadPanelItem Text="Daily Fitup" NavigateUrl="~/WeldingInspec/PipingDFR.aspx" />--%>
+                                            <%--<telerik:RadPanelItem Text="Daily Welding" NavigateUrl="~/WeldingInspec/PipingDWR.aspx" />--%>
+                                            <telerik:RadPanelItem Text="NDT Request" NavigateUrl="Redirect/Redirect.aspx?page=/PipingNDT/NDE_Request.aspx" Value="3.2" />
+                                            <telerik:RadPanelItem Text="NDT Status" NavigateUrl="Redirect/Redirect.aspx?page=/PipingNDT/NDE_Status.aspx" Value="3.3" />
+                                            <telerik:RadPanelItem Text="Spool NDT Clearance" NavigateUrl="Redirect/Redirect.aspx?page=/PipingNDT/Spool_NDE_Clear.aspx" Value="3.4" />
+                                            <%--    <telerik:RadPanelItem Text="Joint Lot Nos" NavigateUrl="Redirect/Redirect.aspx?page=/WeldingInspec/WelderLot.aspx" />
+                                            <telerik:RadPanelItem Text="Penalty RT 100 Joints" NavigateUrl="Redirect/Redirect.aspx?page=/WeldingInspec/RT100.aspx" />--%>
+                                            <telerik:RadPanelItem Text="WPS/PQR" NavigateUrl="Redirect/Redirect.aspx?page=/Home/WPS_Numbers.aspx" Value="3.5"></telerik:RadPanelItem>
+                                            <telerik:RadPanelItem Text="Welders" NavigateUrl="Redirect/Redirect.aspx?page=/WeldingInspec/WelderRegistration.aspx" Value="3.6" />
+                                            <telerik:RadPanelItem Text="Inspector" NavigateUrl="Redirect/Redirect.aspx?page=/WeldingInspec/Inspectors.aspx" Value="3.7" />
+                                        </Items>
+                                    </telerik:RadPanelItem>
+
+                                    <telerik:RadPanelItem Text="Painting" Value="4">
+                                        <Items>
+                                            <telerik:RadPanelItem Text="Bulk Paint Jobcard" NavigateUrl="Redirect/Redirect.aspx?page=/Painting/PaintBulk.aspx" Value="4.1" />
+                                            <telerik:RadPanelItem Text="Bulk Paint Jobcard MIV" NavigateUrl="Redirect/Redirect.aspx?page=/Painting/PaintBulkMIV.aspx" Value="4.2"></telerik:RadPanelItem>
+                                            <telerik:RadPanelItem Text="Bulk Paint Progress" NavigateUrl="Redirect/Redirect.aspx?page=/Painting/PaintBulkReport.aspx" Value="4.3" />
+                                            <telerik:RadPanelItem Text="Coating Jobcard" NavigateUrl="Redirect/Redirect.aspx?page=/SpoolMove/SpoolCoatingJC.aspx" Value="4.4" />
+                                            <telerik:RadPanelItem Text="Update Coating Report" NavigateUrl="Redirect/Redirect.aspx?page=/SpoolMove/SpoolCoatingUpdate.aspx" Value="4.5" />
+                                            <%--<telerik:RadPanelItem Text="Hot Dip Jobcard" NavigateUrl="~/HotDip/HotDipJobcard.aspx" />
+                                            <telerik:RadPanelItem Text="Update Hot Dip" NavigateUrl="~/SpoolMove/SpoolStatusHotDip.aspx" />--%>
+                                            <telerik:RadPanelItem Text="Field Joints Painting" NavigateUrl="Redirect/Redirect.aspx?page=/WeldingInspec/JointsPaint.aspx" Value="4.6" />
+                                            <telerik:RadPanelItem Text="Spool Painting" NavigateUrl="Redirect/Redirect.aspx?page=/SpoolMove/SpoolPaint.aspx" Value="4.7" />
+                                            <telerik:RadPanelItem Text="Spool Pickling Request" NavigateUrl="Redirect/Redirect.aspx?page=/SpoolMove/SpoolPickling.aspx" Value="4.8" />
+                                        </Items>
+                                    </telerik:RadPanelItem>
+
+                                    <telerik:RadPanelItem Text="Spool Control" Value="5">
+                                        <Items>
+                                            <telerik:RadPanelItem Text="Spool Activity" NavigateUrl="Redirect/Redirect.aspx?page=/SpoolMove/SpoolTransSelect.aspx" Value="5.1" />
+                                            <telerik:RadPanelItem Text="Spool Status" NavigateUrl="Redirect/Redirect.aspx?page=/SpoolMove/SpoolStatus.aspx" Value="5.2" />
+                                            <telerik:RadPanelItem Text="Spool Location" NavigateUrl="Redirect/Redirect.aspx?page=/SpoolMove/SpoolLocationMap.aspx" Value="5.3" />
+
+
+                                        </Items>
+                                    </telerik:RadPanelItem>
+
+                                    <%-- <telerik:RadPanelItem Text="Pipe Support">
+                                        <Items>
+                                            <telerik:RadPanelItem Text="Isometric Support List" NavigateUrl="~/PipeSupport/Isome_Supp_List.aspx" />
+                                            <telerik:RadPanelItem Text="Fabrication Job Card" NavigateUrl="~/PipeSupport/Supp_JobCard.aspx" />
+                                            <telerik:RadPanelItem Text="Update Support Painting" NavigateUrl="~/PipeSupport/Supp_Painting_Update.aspx" />
+                                            <telerik:RadPanelItem Text="Support Shipping Jobcard" NavigateUrl="~/PipeSupport/Supp_ShippingJC.aspx" />
+                                            <telerik:RadPanelItem Text="Support Packing List" NavigateUrl="~/PipeSupport/Supp_PackingList.aspx" />
+                                            <telerik:RadPanelItem Text="Support Request for Installation" NavigateUrl="~/PipeSupport/SuppRequest.aspx" />
+                                            <telerik:RadPanelItem Text="Support Receive at Site" NavigateUrl="~/PipeSupport/Supp_Receive.aspx" />
+                                            <telerik:RadPanelItem Text="Support Erection Register" NavigateUrl="~/PipeSupport/SupportErectionRegister.aspx" />
+                                            <telerik:RadPanelItem Text="Support SWN" NavigateUrl="~/PipeSupport/Supp_SWN.aspx" />
+                                            <telerik:RadPanelItem Text="Support Release Note" NavigateUrl="~/PipeSupport/Supp_Release.aspx" />
+                                        </Items>
+                                    </telerik:RadPanelItem>
+
+                                    <telerik:RadPanelItem Text="Manpower/ Consumables">
+                                        <Items>
+                                            <telerik:RadPanelItem Text="Manpower" NavigateUrl="~/Manpower/Manpower.aspx" />
+                                            <telerik:RadPanelItem Text="Timesheet" NavigateUrl="~/Manpower/TimeSheet.aspx" />
+                                            <telerik:RadPanelItem Text="Consumable" NavigateUrl="~/Consumable/Consumable.aspx" />
+                                            <telerik:RadPanelItem Text="Consumable Arrival" NavigateUrl="~/Consumable/ConsumableArrive.aspx" />
+                                            <telerik:RadPanelItem Text="Consumable Issue" NavigateUrl="~/Consumable/ConsumableIssue.aspx" />
+                                            <telerik:RadPanelItem Text="Consumable Return" NavigateUrl="~/Consumable/ConsumableReturn.aspx" />
+                                        </Items>
+                                    </telerik:RadPanelItem>--%>
+
+                                    <telerik:RadPanelItem Text="Site Installation" Value="6">
+                                        <Items>
+                                            <%--<telerik:RadPanelItem Text="Support/ Loose Mats Status" NavigateUrl="~/Erection/LooseMatStatus.aspx" Visible="false" />--%>
+                                            <telerik:RadPanelItem Text="Loose Material Status" NavigateUrl="Redirect/Redirect.aspx?page=/Material/LooseMaterialStatus.aspx" Value="6.1"></telerik:RadPanelItem>
+                                            <telerik:RadPanelItem Text="Site Job Card" NavigateUrl="Redirect/Redirect.aspx?page=/Erection/MatIssueLoose.aspx" Value="6.2" />
+                                            <telerik:RadPanelItem Text="Flange Management" NavigateUrl="Redirect/Redirect.aspx?page=/Erection/SiteAssemblyJC.aspx" Value="6.3" />
+                                            <telerik:RadPanelItem Text="Site MIV" NavigateUrl="Redirect/Redirect.aspx?page=/Erection/SiteMIV.aspx" Value="6.4" />
+                                            <%-- <telerik:RadPanelItem Text="Loose Materials Request" NavigateUrl="Redirect/Redirect.aspx?page=/Erection/BomRequest.aspx" />
+                                            <telerik:RadPanelItem Text="Loose Materials Receive" NavigateUrl="Redirect/Redirect.aspx?page=/Erection/BomReceive.aspx" />--%>
+                                            <telerik:RadPanelItem Text="Remaining Work Entry" NavigateUrl="Redirect/Redirect.aspx?page=/Erection/RemainWorkPunch.aspx" Value="6.5" />
+                                        </Items>
+                                    </telerik:RadPanelItem>
+
+                                    <telerik:RadPanelItem Text="Testing" Value="7">
+                                        <Items>
+                                            <telerik:RadPanelItem Text="System Definition" NavigateUrl="Redirect/Redirect.aspx?page=/TestPackage/SystemDef.aspx" Value="7.1" />
+                                            <telerik:RadPanelItem Text="Test Package Master" NavigateUrl="Redirect/Redirect.aspx?page=/TestPackage/TestPkg.aspx" Value="7.2" />
+                                            <telerik:RadPanelItem Text="Test Package Transmittals" NavigateUrl="Redirect/Redirect.aspx?page=/TestPackage/TestPkg_TransSelect.aspx" Value="7.3" />
+                                            <telerik:RadPanelItem Text="Line Completion Status" NavigateUrl="Redirect/Redirect.aspx?page=/TestPackage/AreaSystemCompletion.aspx" Value="7.4" />
+                                            <telerik:RadPanelItem Text="Test Package Status Reports" NavigateUrl="Redirect/Redirect.aspx?page=/TestPackage/TestPackageStatus.aspx" Value="7.5" />
+                                            <telerik:RadPanelItem Text="Punch Status Reports" NavigateUrl="Redirect/Redirect.aspx?page=/TestPackage/PunchStatusReports.aspx" Value="7.6" />
+                                        </Items>
+                                    </telerik:RadPanelItem>
+
+                                    <telerik:RadPanelItem Text="Miscellaneous" Value="8">
+                                        <Items>
+                                            <telerik:RadPanelItem Text="Basic Data" NavigateUrl="Redirect/Redirect.aspx?page=/Home/ProjectBasicData.aspx" Value="8.1" />
+                                            <%--<telerik:RadPanelItem Text="Upload Files/ Reports" NavigateUrl="~/Home/UploadFileManager.aspx" />--%>
+                                            <%--<telerik:RadPanelItem Text="Loose Support SRN" NavigateUrl="Isome/ImportLooseSuppSRN.aspx"></telerik:RadPanelItem>--%>
+                                        </Items>
+                                    </telerik:RadPanelItem>
+
+                                    <telerik:RadPanelItem Text="Reports/ Downloads" Value="9">
+                                        <Items>
+                                            <telerik:RadPanelItem Text="Basic Reports Index" NavigateUrl="Redirect/Redirect.aspx?page=/BasicReports/Report_List.aspx" Value="9.1" />
+                                            <%--   <telerik:RadPanelItem Text="Graphical Reports" NavigateUrl="~/BasicReports/AmoghGraphs.aspx" />--%>
+                                            <telerik:RadPanelItem Text="Excel Downloads" NavigateUrl="Redirect/Redirect.aspx?page=/Home/ExportData.aspx" Value="9.2" />
+                                            <telerik:RadPanelItem Text="Bulk Downloads" NavigateUrl="Redirect/Redirect.aspx?page=/Home/BulkPDFDownloads.aspx" Value="9.3" />
+                                            <telerik:RadPanelItem Text="Bulk Uploads" NavigateUrl="Redirect/Redirect.aspx?page=/Home/BulkPDFUploads.aspx" Value="9.4" />
+                                            <telerik:RadPanelItem Text="File Explorer" NavigateUrl="Redirect/Redirect.aspx?page=/Home/PDFFileManager.aspx" Value="9.5" />
+                                            <telerik:RadPanelItem Text="PDF Reports" NavigateUrl="Redirect/Redirect.aspx?page=/Home/ViewReports.aspx" Value="9.6" />
+                                            <telerik:RadPanelItem Text="Custom Reports" NavigateUrl="Redirect/Redirect.aspx?page=/Home/CustomReport_List.aspx" Value="9.7" />
+                                        </Items>
+                                    </telerik:RadPanelItem>
+                                </Items>
+                            </telerik:RadPanelBar>
+                        </div>
+                    </td>
+                    <td style="vertical-align: top; text-align: left; width: 100%">
+                        <%--      <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                <ContentTemplate>
+                                    <asp:Panel ID="MessagePanel" runat="server" CssClass="info" Visible="false" EnableViewState="false">
+                                        <asp:Label ID="MsgLabel" runat="server"></asp:Label>
+                                    </asp:Panel>
+
+                                </ContentTemplate>
+                            </asp:UpdatePanel>--%>
+                        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                            <ContentTemplate>
+                                <div class="MessagePanelDiv" id="PanelDiv">
+                                    <asp:Panel ID="MessagePanelID" runat="server" Visible="false" EnableViewState="false">
+                                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                        <asp:Label ID="labelMessage" runat="server" />
+                                    </asp:Panel>
+                                </div>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                        <div>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="MasterFooter">
+            <asp:UpdatePanel ID="UpdatePanel6" runat="server">
+                <ContentTemplate>
+                    <table style="width: 100%; height: 30px; background-color: gainsboro;">
+                        <tr>
+                            <td>Copyright © 2018, 2022, AMOGH All rights reserved.
+                            </td>
+                            <td style="width: 150px; text-align: right;">
+                                <asp:Label ID="UserNameLablel" runat="server" Font-Bold="False" Font-Size="Medium"></asp:Label>
+                            </td>
+                            <td style="width: 35px;">
+                                <asp:ImageButton ID="ImageButtonUserInfo" runat="server" ImageUrl="~/Images/icons/User-icon-25px.png" OnClick="ImageButtonUserInfo_Click" ToolTip="User Info" />
+                            </td>
+                            <td style="width: 28px;">
+                                <asp:ImageButton ID="ImageButtonLogout" runat="server" ImageUrl="~/Images/icons/exit-icon.png" OnClick="ImageButtonLogout_Click" ToolTip="Logout" />
+                            </td>
+                        </tr>
+                    </table>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+        <asp:HiddenField ID="RadGridListHiddenField" runat="server" />
+        <asp:HiddenField ID="AspGridListHiddenField" runat="server" />
+        <asp:HiddenField ID="ButtonListHiddenField" runat="server" />
+    </form>
+</body>
+</html>

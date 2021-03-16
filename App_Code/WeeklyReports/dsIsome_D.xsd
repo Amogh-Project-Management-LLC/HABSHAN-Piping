@@ -1,0 +1,1310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsIsoMetricIndex" targetNamespace="http://tempuri.org/dsIsoMetricIndex.xsd" xmlns:mstns="http://tempuri.org/dsIsoMetricIndex.xsd" xmlns="http://tempuri.org/dsIsoMetricIndex.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ipmsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ipmsConnectionString (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ipmsConnectionString.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VIEW_ISOMETRIC_INDEXTableAdapter" GeneratorDataComponentClassName="VIEW_ISOMETRIC_INDEXTableAdapter" Name="VIEW_ISOMETRIC_INDEX" UserDataComponentName="VIEW_ISOMETRIC_INDEXTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ipmsConnectionString (Web.config)" DbObjectName="KHAZZAN2.VIEW_ISOMETRIC_INDEX" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT PROJ_ID, JOB_CODE, CLIENT_NAME, JV_OF, APP_LOGO1, APP_LOGO2, APP_LOGO3, REP_TITLE1, REP_TITLE2, SUB_CON_NAME, MILESTONE, PRIORITY, AREA, SUB_AREA, SCOPE_SHEET, SHEET_COUNT, WORK_DESCRIPTION, CPECC_PROGRESS, CPECC_PROVIDED, 
+             UPDATED_AMOGH, BAL_UPDATE_AMOGH, REMARKS
+FROM   VIEW_ISOMETRIC_INDEX</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PROJ_ID" DataSetColumn="PROJ_ID" />
+              <Mapping SourceColumn="JOB_CODE" DataSetColumn="JOB_CODE" />
+              <Mapping SourceColumn="CLIENT_NAME" DataSetColumn="CLIENT_NAME" />
+              <Mapping SourceColumn="JV_OF" DataSetColumn="JV_OF" />
+              <Mapping SourceColumn="APP_LOGO1" DataSetColumn="APP_LOGO1" />
+              <Mapping SourceColumn="APP_LOGO2" DataSetColumn="APP_LOGO2" />
+              <Mapping SourceColumn="APP_LOGO3" DataSetColumn="APP_LOGO3" />
+              <Mapping SourceColumn="REP_TITLE1" DataSetColumn="REP_TITLE1" />
+              <Mapping SourceColumn="REP_TITLE2" DataSetColumn="REP_TITLE2" />
+              <Mapping SourceColumn="SUB_CON_NAME" DataSetColumn="SUB_CON_NAME" />
+              <Mapping SourceColumn="MILESTONE" DataSetColumn="MILESTONE" />
+              <Mapping SourceColumn="PRIORITY" DataSetColumn="PRIORITY" />
+              <Mapping SourceColumn="AREA" DataSetColumn="AREA" />
+              <Mapping SourceColumn="SUB_AREA" DataSetColumn="SUB_AREA" />
+              <Mapping SourceColumn="SCOPE_SHEET" DataSetColumn="SCOPE_SHEET" />
+              <Mapping SourceColumn="SHEET_COUNT" DataSetColumn="SHEET_COUNT" />
+              <Mapping SourceColumn="WORK_DESCRIPTION" DataSetColumn="WORK_DESCRIPTION" />
+              <Mapping SourceColumn="CPECC_PROGRESS" DataSetColumn="CPECC_PROGRESS" />
+              <Mapping SourceColumn="CPECC_PROVIDED" DataSetColumn="CPECC_PROVIDED" />
+              <Mapping SourceColumn="UPDATED_AMOGH" DataSetColumn="UPDATED_AMOGH" />
+              <Mapping SourceColumn="BAL_UPDATE_AMOGH" DataSetColumn="BAL_UPDATE_AMOGH" />
+              <Mapping SourceColumn="REMARKS" DataSetColumn="REMARKS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VIEW_SPOOLGEN_PROGTableAdapter" GeneratorDataComponentClassName="VIEW_SPOOLGEN_PROGTableAdapter" Name="VIEW_SPOOLGEN_PROG" UserDataComponentName="VIEW_SPOOLGEN_PROGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ipmsConnectionString (Web.config)" DbObjectName="KHAZZAN2.VIEW_SPOOLGEN_PROG" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT PROJ_ID, JOB_CODE, CLIENT_NAME, JV_OF, APP_LOGO1, APP_LOGO2, APP_LOGO3, REP_TITLE1, REP_TITLE2, SUB_CON_NAME, MILESTONE, AREA_PRIORITY, AREA, SUB_AREA, SCOPE_SHEET, SG_DONE, TRANSMITTAL_NUMBER, WORK_DESCRIPTION, CPECC_PROGRESS, 
+             CPECC_PROVIDED, UPDATED_AMOGH, BAL_UPDATE_AMOGH, REMARKS
+FROM   VIEW_SPOOLGEN_PROG</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PROJ_ID" DataSetColumn="PROJ_ID" />
+              <Mapping SourceColumn="JOB_CODE" DataSetColumn="JOB_CODE" />
+              <Mapping SourceColumn="CLIENT_NAME" DataSetColumn="CLIENT_NAME" />
+              <Mapping SourceColumn="JV_OF" DataSetColumn="JV_OF" />
+              <Mapping SourceColumn="APP_LOGO1" DataSetColumn="APP_LOGO1" />
+              <Mapping SourceColumn="APP_LOGO2" DataSetColumn="APP_LOGO2" />
+              <Mapping SourceColumn="APP_LOGO3" DataSetColumn="APP_LOGO3" />
+              <Mapping SourceColumn="REP_TITLE1" DataSetColumn="REP_TITLE1" />
+              <Mapping SourceColumn="REP_TITLE2" DataSetColumn="REP_TITLE2" />
+              <Mapping SourceColumn="SUB_CON_NAME" DataSetColumn="SUB_CON_NAME" />
+              <Mapping SourceColumn="MILESTONE" DataSetColumn="MILESTONE" />
+              <Mapping SourceColumn="AREA_PRIORITY" DataSetColumn="AREA_PRIORITY" />
+              <Mapping SourceColumn="AREA" DataSetColumn="AREA" />
+              <Mapping SourceColumn="SUB_AREA" DataSetColumn="SUB_AREA" />
+              <Mapping SourceColumn="SCOPE_SHEET" DataSetColumn="SCOPE_SHEET" />
+              <Mapping SourceColumn="SG_DONE" DataSetColumn="SG_DONE" />
+              <Mapping SourceColumn="TRANSMITTAL_NUMBER" DataSetColumn="TRANSMITTAL_NUMBER" />
+              <Mapping SourceColumn="WORK_DESCRIPTION" DataSetColumn="WORK_DESCRIPTION" />
+              <Mapping SourceColumn="CPECC_PROGRESS" DataSetColumn="CPECC_PROGRESS" />
+              <Mapping SourceColumn="CPECC_PROVIDED" DataSetColumn="CPECC_PROVIDED" />
+              <Mapping SourceColumn="UPDATED_AMOGH" DataSetColumn="UPDATED_AMOGH" />
+              <Mapping SourceColumn="BAL_UPDATE_AMOGH" DataSetColumn="BAL_UPDATE_AMOGH" />
+              <Mapping SourceColumn="REMARKS" DataSetColumn="REMARKS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VIEW_JOBCARD_PROGTableAdapter" GeneratorDataComponentClassName="VIEW_JOBCARD_PROGTableAdapter" Name="VIEW_JOBCARD_PROG" UserDataComponentName="VIEW_JOBCARD_PROGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ipmsConnectionString (Web.config)" DbObjectName="KHAZZAN2.VIEW_JOBCARD_PROG" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from view_jobcard_prog</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PROJ_ID" DataSetColumn="PROJ_ID" />
+              <Mapping SourceColumn="JOB_CODE" DataSetColumn="JOB_CODE" />
+              <Mapping SourceColumn="CLIENT_NAME" DataSetColumn="CLIENT_NAME" />
+              <Mapping SourceColumn="JV_OF" DataSetColumn="JV_OF" />
+              <Mapping SourceColumn="APP_LOGO1" DataSetColumn="APP_LOGO1" />
+              <Mapping SourceColumn="APP_LOGO2" DataSetColumn="APP_LOGO2" />
+              <Mapping SourceColumn="APP_LOGO3" DataSetColumn="APP_LOGO3" />
+              <Mapping SourceColumn="REP_TITLE1" DataSetColumn="REP_TITLE1" />
+              <Mapping SourceColumn="REP_TITLE2" DataSetColumn="REP_TITLE2" />
+              <Mapping SourceColumn="SUB_CON_NAME" DataSetColumn="SUB_CON_NAME" />
+              <Mapping SourceColumn="MILESTONE" DataSetColumn="MILESTONE" />
+              <Mapping SourceColumn="AREA_PRIORITY" DataSetColumn="AREA_PRIORITY" />
+              <Mapping SourceColumn="AREA" DataSetColumn="AREA" />
+              <Mapping SourceColumn="SUB_AREA" DataSetColumn="SUB_AREA" />
+              <Mapping SourceColumn="SCOPE_SHEET" DataSetColumn="SCOPE_SHEET" />
+              <Mapping SourceColumn="SHOP_INCH_DIA" DataSetColumn="SHOP_INCH_DIA" />
+              <Mapping SourceColumn="FIELD_INCH_DIA" DataSetColumn="FIELD_INCH_DIA" />
+              <Mapping SourceColumn="JOINTS" DataSetColumn="JOINTS" />
+              <Mapping SourceColumn="SPL_JOB_CARD" DataSetColumn="SPL_JOB_CARD" />
+              <Mapping SourceColumn="WORK_DESCRIPTION" DataSetColumn="WORK_DESCRIPTION" />
+              <Mapping SourceColumn="CPECC_PROGRESS" DataSetColumn="CPECC_PROGRESS" />
+              <Mapping SourceColumn="CPECC_PROVIDED" DataSetColumn="CPECC_PROVIDED" />
+              <Mapping SourceColumn="UPDATED_AMOGH" DataSetColumn="UPDATED_AMOGH" />
+              <Mapping SourceColumn="BAL_UPDATE_AMOGH" DataSetColumn="BAL_UPDATE_AMOGH" />
+              <Mapping SourceColumn="REMARKS" DataSetColumn="REMARKS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VIEW_FITUP_PROGTableAdapter" GeneratorDataComponentClassName="VIEW_FITUP_PROGTableAdapter" Name="VIEW_FITUP_PROG" UserDataComponentName="VIEW_FITUP_PROGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ipmsConnectionString (Web.config)" DbObjectName="KHAZZAN2.VIEW_FITUP_PROG" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from view_fitup_prog</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PROJ_ID" DataSetColumn="PROJ_ID" />
+              <Mapping SourceColumn="JOB_CODE" DataSetColumn="JOB_CODE" />
+              <Mapping SourceColumn="CLIENT_NAME" DataSetColumn="CLIENT_NAME" />
+              <Mapping SourceColumn="JV_OF" DataSetColumn="JV_OF" />
+              <Mapping SourceColumn="APP_LOGO1" DataSetColumn="APP_LOGO1" />
+              <Mapping SourceColumn="APP_LOGO2" DataSetColumn="APP_LOGO2" />
+              <Mapping SourceColumn="APP_LOGO3" DataSetColumn="APP_LOGO3" />
+              <Mapping SourceColumn="REP_TITLE1" DataSetColumn="REP_TITLE1" />
+              <Mapping SourceColumn="REP_TITLE2" DataSetColumn="REP_TITLE2" />
+              <Mapping SourceColumn="SUB_CON_NAME" DataSetColumn="SUB_CON_NAME" />
+              <Mapping SourceColumn="MILESTONE" DataSetColumn="MILESTONE" />
+              <Mapping SourceColumn="AREA_PRIORITY" DataSetColumn="AREA_PRIORITY" />
+              <Mapping SourceColumn="AREA" DataSetColumn="AREA" />
+              <Mapping SourceColumn="SUB_AREA" DataSetColumn="SUB_AREA" />
+              <Mapping SourceColumn="SCOPE_SHEET" DataSetColumn="SCOPE_SHEET" />
+              <Mapping SourceColumn="SHOP_INCH_DIA" DataSetColumn="SHOP_INCH_DIA" />
+              <Mapping SourceColumn="FIELD_INCH_DIA" DataSetColumn="FIELD_INCH_DIA" />
+              <Mapping SourceColumn="TOTAL_JOINTS" DataSetColumn="TOTAL_JOINTS" />
+              <Mapping SourceColumn="FITUP_INCH_DIA" DataSetColumn="FITUP_INCH_DIA" />
+              <Mapping SourceColumn="FITUP" DataSetColumn="FITUP" />
+              <Mapping SourceColumn="WORK_DESCRIPTION" DataSetColumn="WORK_DESCRIPTION" />
+              <Mapping SourceColumn="CPECC_PROGRESS" DataSetColumn="CPECC_PROGRESS" />
+              <Mapping SourceColumn="CPECC_PROVIDED" DataSetColumn="CPECC_PROVIDED" />
+              <Mapping SourceColumn="UPDATED_AMOGH" DataSetColumn="UPDATED_AMOGH" />
+              <Mapping SourceColumn="BAL_UPDATE_AMOGH" DataSetColumn="BAL_UPDATE_AMOGH" />
+              <Mapping SourceColumn="REMARKS" DataSetColumn="REMARKS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VIEW_WELD_PROGTableAdapter" GeneratorDataComponentClassName="VIEW_WELD_PROGTableAdapter" Name="VIEW_WELD_PROG" UserDataComponentName="VIEW_WELD_PROGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ipmsConnectionString (Web.config)" DbObjectName="KHAZZAN2.VIEW_WELD_PROG" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from view_weld_prog</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PROJ_ID" DataSetColumn="PROJ_ID" />
+              <Mapping SourceColumn="JOB_CODE" DataSetColumn="JOB_CODE" />
+              <Mapping SourceColumn="CLIENT_NAME" DataSetColumn="CLIENT_NAME" />
+              <Mapping SourceColumn="JV_OF" DataSetColumn="JV_OF" />
+              <Mapping SourceColumn="APP_LOGO1" DataSetColumn="APP_LOGO1" />
+              <Mapping SourceColumn="APP_LOGO2" DataSetColumn="APP_LOGO2" />
+              <Mapping SourceColumn="APP_LOGO3" DataSetColumn="APP_LOGO3" />
+              <Mapping SourceColumn="REP_TITLE1" DataSetColumn="REP_TITLE1" />
+              <Mapping SourceColumn="REP_TITLE2" DataSetColumn="REP_TITLE2" />
+              <Mapping SourceColumn="SUB_CON_NAME" DataSetColumn="SUB_CON_NAME" />
+              <Mapping SourceColumn="MILESTONE" DataSetColumn="MILESTONE" />
+              <Mapping SourceColumn="AREA_PRIORITY" DataSetColumn="AREA_PRIORITY" />
+              <Mapping SourceColumn="AREA" DataSetColumn="AREA" />
+              <Mapping SourceColumn="SUB_AREA" DataSetColumn="SUB_AREA" />
+              <Mapping SourceColumn="SCOPE_SHEET" DataSetColumn="SCOPE_SHEET" />
+              <Mapping SourceColumn="SHOP_INCH_DIA" DataSetColumn="SHOP_INCH_DIA" />
+              <Mapping SourceColumn="FIELD_INCH_DIA" DataSetColumn="FIELD_INCH_DIA" />
+              <Mapping SourceColumn="TOTAL_JOINTS" DataSetColumn="TOTAL_JOINTS" />
+              <Mapping SourceColumn="WELDED_INCH_DIA" DataSetColumn="WELDED_INCH_DIA" />
+              <Mapping SourceColumn="WELDED" DataSetColumn="WELDED" />
+              <Mapping SourceColumn="WORK_DESCRIPTION" DataSetColumn="WORK_DESCRIPTION" />
+              <Mapping SourceColumn="CPECC_PROGRESS" DataSetColumn="CPECC_PROGRESS" />
+              <Mapping SourceColumn="CPECC_PROVIDED" DataSetColumn="CPECC_PROVIDED" />
+              <Mapping SourceColumn="UPDATED_AMOGH" DataSetColumn="UPDATED_AMOGH" />
+              <Mapping SourceColumn="BAL_UPDATE_AMOGH" DataSetColumn="BAL_UPDATE_AMOGH" />
+              <Mapping SourceColumn="REMARKS" DataSetColumn="REMARKS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VIEW_NDT_REQUESTEDTableAdapter" GeneratorDataComponentClassName="VIEW_NDT_REQUESTEDTableAdapter" Name="VIEW_NDT_REQUESTED" UserDataComponentName="VIEW_NDT_REQUESTEDTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ipmsConnectionString (Web.config)" DbObjectName="KHAZZAN2.VIEW_NDT_REQUESTED" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from view_ndt_requested</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PROJ_ID" DataSetColumn="PROJ_ID" />
+              <Mapping SourceColumn="JOB_CODE" DataSetColumn="JOB_CODE" />
+              <Mapping SourceColumn="CLIENT_NAME" DataSetColumn="CLIENT_NAME" />
+              <Mapping SourceColumn="JV_OF" DataSetColumn="JV_OF" />
+              <Mapping SourceColumn="APP_LOGO1" DataSetColumn="APP_LOGO1" />
+              <Mapping SourceColumn="APP_LOGO2" DataSetColumn="APP_LOGO2" />
+              <Mapping SourceColumn="APP_LOGO3" DataSetColumn="APP_LOGO3" />
+              <Mapping SourceColumn="REP_TITLE1" DataSetColumn="REP_TITLE1" />
+              <Mapping SourceColumn="REP_TITLE2" DataSetColumn="REP_TITLE2" />
+              <Mapping SourceColumn="SUB_CON_NAME" DataSetColumn="SUB_CON_NAME" />
+              <Mapping SourceColumn="MILESTONE" DataSetColumn="MILESTONE" />
+              <Mapping SourceColumn="AREA_PRIORITY" DataSetColumn="AREA_PRIORITY" />
+              <Mapping SourceColumn="AREA" DataSetColumn="AREA" />
+              <Mapping SourceColumn="SUB_AREA" DataSetColumn="SUB_AREA" />
+              <Mapping SourceColumn="SCOPE_SHEET" DataSetColumn="SCOPE_SHEET" />
+              <Mapping SourceColumn="SHOP_INCH_DIA" DataSetColumn="SHOP_INCH_DIA" />
+              <Mapping SourceColumn="FIELD_INCH_DIA" DataSetColumn="FIELD_INCH_DIA" />
+              <Mapping SourceColumn="TOTAL_JOINTS" DataSetColumn="TOTAL_JOINTS" />
+              <Mapping SourceColumn="NDE_REQ_JOINTS" DataSetColumn="NDE_REQ_JOINTS" />
+              <Mapping SourceColumn="NDE_DONE" DataSetColumn="NDE_DONE" />
+              <Mapping SourceColumn="WORK_DESCRIPTION" DataSetColumn="WORK_DESCRIPTION" />
+              <Mapping SourceColumn="CPECC_PROGRESS" DataSetColumn="CPECC_PROGRESS" />
+              <Mapping SourceColumn="CPECC_PROVIDED" DataSetColumn="CPECC_PROVIDED" />
+              <Mapping SourceColumn="UPDATED_AMOGH" DataSetColumn="UPDATED_AMOGH" />
+              <Mapping SourceColumn="BAL_UPDATE_AMOGH" DataSetColumn="BAL_UPDATE_AMOGH" />
+              <Mapping SourceColumn="REMARKS" DataSetColumn="REMARKS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VIEW_NDE_PROGTableAdapter" GeneratorDataComponentClassName="VIEW_NDE_PROGTableAdapter" Name="VIEW_NDE_PROG" UserDataComponentName="VIEW_NDE_PROGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ipmsConnectionString (Web.config)" DbObjectName="KHAZZAN2.VIEW_NDE_PROG" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from view_nde_prog</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PROJ_ID" DataSetColumn="PROJ_ID" />
+              <Mapping SourceColumn="JOB_CODE" DataSetColumn="JOB_CODE" />
+              <Mapping SourceColumn="CLIENT_NAME" DataSetColumn="CLIENT_NAME" />
+              <Mapping SourceColumn="JV_OF" DataSetColumn="JV_OF" />
+              <Mapping SourceColumn="APP_LOGO1" DataSetColumn="APP_LOGO1" />
+              <Mapping SourceColumn="APP_LOGO2" DataSetColumn="APP_LOGO2" />
+              <Mapping SourceColumn="APP_LOGO3" DataSetColumn="APP_LOGO3" />
+              <Mapping SourceColumn="REP_TITLE1" DataSetColumn="REP_TITLE1" />
+              <Mapping SourceColumn="REP_TITLE2" DataSetColumn="REP_TITLE2" />
+              <Mapping SourceColumn="SUB_CON_NAME" DataSetColumn="SUB_CON_NAME" />
+              <Mapping SourceColumn="MILESTONE" DataSetColumn="MILESTONE" />
+              <Mapping SourceColumn="AREA_PRIORITY" DataSetColumn="AREA_PRIORITY" />
+              <Mapping SourceColumn="AREA" DataSetColumn="AREA" />
+              <Mapping SourceColumn="SUB_AREA" DataSetColumn="SUB_AREA" />
+              <Mapping SourceColumn="SCOPE_SHEET" DataSetColumn="SCOPE_SHEET" />
+              <Mapping SourceColumn="SHOP_INCH_DIA" DataSetColumn="SHOP_INCH_DIA" />
+              <Mapping SourceColumn="FIELD_INCH_DIA" DataSetColumn="FIELD_INCH_DIA" />
+              <Mapping SourceColumn="TOTAL_JOINTS" DataSetColumn="TOTAL_JOINTS" />
+              <Mapping SourceColumn="NDE_JOINTS" DataSetColumn="NDE_JOINTS" />
+              <Mapping SourceColumn="NDE_DONE" DataSetColumn="NDE_DONE" />
+              <Mapping SourceColumn="WORK_DESCRIPTION" DataSetColumn="WORK_DESCRIPTION" />
+              <Mapping SourceColumn="CPECC_PROGRESS" DataSetColumn="CPECC_PROGRESS" />
+              <Mapping SourceColumn="CPECC_PROVIDED" DataSetColumn="CPECC_PROVIDED" />
+              <Mapping SourceColumn="UPDATED_AMOGH" DataSetColumn="UPDATED_AMOGH" />
+              <Mapping SourceColumn="BAL_UPDATE_AMOGH" DataSetColumn="BAL_UPDATE_AMOGH" />
+              <Mapping SourceColumn="REMARKS" DataSetColumn="REMARKS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VIEW_MIV_PROGTableAdapter" GeneratorDataComponentClassName="VIEW_MIV_PROGTableAdapter" Name="VIEW_MIV_PROG" UserDataComponentName="VIEW_MIV_PROGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ipmsConnectionString (Web.config)" DbObjectName="KHAZZAN2.VIEW_MIV_PROG" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from view_miv_prog</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PROJ_ID" DataSetColumn="PROJ_ID" />
+              <Mapping SourceColumn="JOB_CODE" DataSetColumn="JOB_CODE" />
+              <Mapping SourceColumn="CLIENT_NAME" DataSetColumn="CLIENT_NAME" />
+              <Mapping SourceColumn="JV_OF" DataSetColumn="JV_OF" />
+              <Mapping SourceColumn="APP_LOGO1" DataSetColumn="APP_LOGO1" />
+              <Mapping SourceColumn="APP_LOGO2" DataSetColumn="APP_LOGO2" />
+              <Mapping SourceColumn="APP_LOGO3" DataSetColumn="APP_LOGO3" />
+              <Mapping SourceColumn="REP_TITLE1" DataSetColumn="REP_TITLE1" />
+              <Mapping SourceColumn="REP_TITLE2" DataSetColumn="REP_TITLE2" />
+              <Mapping SourceColumn="SUB_CON_NAME" DataSetColumn="SUB_CON_NAME" />
+              <Mapping SourceColumn="MILESTONE" DataSetColumn="MILESTONE" />
+              <Mapping SourceColumn="AREA_PRIORITY" DataSetColumn="AREA_PRIORITY" />
+              <Mapping SourceColumn="AREA" DataSetColumn="AREA" />
+              <Mapping SourceColumn="SUB_AREA" DataSetColumn="SUB_AREA" />
+              <Mapping SourceColumn="SCOPE_SHEET" DataSetColumn="SCOPE_SHEET" />
+              <Mapping SourceColumn="SHOP_INCH_DIA" DataSetColumn="SHOP_INCH_DIA" />
+              <Mapping SourceColumn="FIELD_INCH_DIA" DataSetColumn="FIELD_INCH_DIA" />
+              <Mapping SourceColumn="JOINTS" DataSetColumn="JOINTS" />
+              <Mapping SourceColumn="SPL_JOB_CARD" DataSetColumn="SPL_JOB_CARD" />
+              <Mapping SourceColumn="JOB_CARD_ISSUED" DataSetColumn="JOB_CARD_ISSUED" />
+              <Mapping SourceColumn="WORK_DESCRIPTION" DataSetColumn="WORK_DESCRIPTION" />
+              <Mapping SourceColumn="TRANSMITTAL_NUMBER" DataSetColumn="TRANSMITTAL_NUMBER" />
+              <Mapping SourceColumn="CPECC_PROGRESS" DataSetColumn="CPECC_PROGRESS" />
+              <Mapping SourceColumn="CPECC_PROVIDED" DataSetColumn="CPECC_PROVIDED" />
+              <Mapping SourceColumn="UPDATED_AMOGH" DataSetColumn="UPDATED_AMOGH" />
+              <Mapping SourceColumn="BAL_UPDATE_AMOGH" DataSetColumn="BAL_UPDATE_AMOGH" />
+              <Mapping SourceColumn="REMARKS" DataSetColumn="REMARKS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VIEW_TRANSMITAL_SPOOLEGENTableAdapter" GeneratorDataComponentClassName="VIEW_TRANSMITAL_SPOOLEGENTableAdapter" Name="VIEW_TRANSMITAL_SPOOLEGEN" UserDataComponentName="VIEW_TRANSMITAL_SPOOLEGENTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ipmsConnectionString (Web.config)" DbObjectName="KHAZZAN2.VIEW_TRANSMITAL_SPOOLEGEN" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from view_transmital_spoolegen</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PROJ_ID" DataSetColumn="PROJ_ID" />
+              <Mapping SourceColumn="JOB_CODE" DataSetColumn="JOB_CODE" />
+              <Mapping SourceColumn="CLIENT_NAME" DataSetColumn="CLIENT_NAME" />
+              <Mapping SourceColumn="JV_OF" DataSetColumn="JV_OF" />
+              <Mapping SourceColumn="APP_LOGO1" DataSetColumn="APP_LOGO1" />
+              <Mapping SourceColumn="APP_LOGO2" DataSetColumn="APP_LOGO2" />
+              <Mapping SourceColumn="APP_LOGO3" DataSetColumn="APP_LOGO3" />
+              <Mapping SourceColumn="REP_TITLE1" DataSetColumn="REP_TITLE1" />
+              <Mapping SourceColumn="REP_TITLE2" DataSetColumn="REP_TITLE2" />
+              <Mapping SourceColumn="SUB_CON_ID" DataSetColumn="SUB_CON_ID" />
+              <Mapping SourceColumn="SUB_CON_NAME" DataSetColumn="SUB_CON_NAME" />
+              <Mapping SourceColumn="MILESTONE" DataSetColumn="MILESTONE" />
+              <Mapping SourceColumn="AREA_PRIORITY" DataSetColumn="AREA_PRIORITY" />
+              <Mapping SourceColumn="AREA" DataSetColumn="AREA" />
+              <Mapping SourceColumn="SUB_AREA" DataSetColumn="SUB_AREA" />
+              <Mapping SourceColumn="SCOPE_SHEET" DataSetColumn="SCOPE_SHEET" />
+              <Mapping SourceColumn="LOT_NO" DataSetColumn="LOT_NO" />
+              <Mapping SourceColumn="WORK_DESCRIPTION" DataSetColumn="WORK_DESCRIPTION" />
+              <Mapping SourceColumn="CPECC_PROGRESS" DataSetColumn="CPECC_PROGRESS" />
+              <Mapping SourceColumn="CPECC_PROVIDED" DataSetColumn="CPECC_PROVIDED" />
+              <Mapping SourceColumn="UPDATED_AMOGH" DataSetColumn="UPDATED_AMOGH" />
+              <Mapping SourceColumn="BAL_UPDATE_AMOGH" DataSetColumn="BAL_UPDATE_AMOGH" />
+              <Mapping SourceColumn="REMARKS" DataSetColumn="REMARKS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsIsoMetricIndex" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsIsoMetricIndex" msprop:Generator_DataSetName="dsIsoMetricIndex">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VIEW_ISOMETRIC_INDEX" msprop:Generator_TableClassName="VIEW_ISOMETRIC_INDEXDataTable" msprop:Generator_TableVarName="tableVIEW_ISOMETRIC_INDEX" msprop:Generator_TablePropName="VIEW_ISOMETRIC_INDEX" msprop:Generator_RowDeletingName="VIEW_ISOMETRIC_INDEXRowDeleting" msprop:Generator_RowChangingName="VIEW_ISOMETRIC_INDEXRowChanging" msprop:Generator_RowEvHandlerName="VIEW_ISOMETRIC_INDEXRowChangeEventHandler" msprop:Generator_RowDeletedName="VIEW_ISOMETRIC_INDEXRowDeleted" msprop:Generator_UserTableName="VIEW_ISOMETRIC_INDEX" msprop:Generator_RowChangedName="VIEW_ISOMETRIC_INDEXRowChanged" msprop:Generator_RowEvArgName="VIEW_ISOMETRIC_INDEXRowChangeEvent" msprop:Generator_RowClassName="VIEW_ISOMETRIC_INDEXRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROJ_ID" msprop:Generator_ColumnVarNameInTable="columnPROJ_ID" msprop:Generator_ColumnPropNameInRow="PROJ_ID" msprop:Generator_ColumnPropNameInTable="PROJ_IDColumn" msprop:Generator_UserColumnName="PROJ_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JOB_CODE" msprop:Generator_ColumnVarNameInTable="columnJOB_CODE" msprop:Generator_ColumnPropNameInRow="JOB_CODE" msprop:Generator_ColumnPropNameInTable="JOB_CODEColumn" msprop:Generator_UserColumnName="JOB_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JV_OF" msprop:Generator_ColumnVarNameInTable="columnJV_OF" msprop:Generator_ColumnPropNameInRow="JV_OF" msprop:Generator_ColumnPropNameInTable="JV_OFColumn" msprop:Generator_UserColumnName="JV_OF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO1" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO1" msprop:Generator_ColumnPropNameInRow="APP_LOGO1" msprop:Generator_ColumnPropNameInTable="APP_LOGO1Column" msprop:Generator_UserColumnName="APP_LOGO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO2" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO2" msprop:Generator_ColumnPropNameInRow="APP_LOGO2" msprop:Generator_ColumnPropNameInTable="APP_LOGO2Column" msprop:Generator_UserColumnName="APP_LOGO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO3" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO3" msprop:Generator_ColumnPropNameInRow="APP_LOGO3" msprop:Generator_ColumnPropNameInTable="APP_LOGO3Column" msprop:Generator_UserColumnName="APP_LOGO3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE1" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE1" msprop:Generator_ColumnPropNameInRow="REP_TITLE1" msprop:Generator_ColumnPropNameInTable="REP_TITLE1Column" msprop:Generator_UserColumnName="REP_TITLE1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE2" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE2" msprop:Generator_ColumnPropNameInRow="REP_TITLE2" msprop:Generator_ColumnPropNameInTable="REP_TITLE2Column" msprop:Generator_UserColumnName="REP_TITLE2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_CON_NAME" msprop:Generator_ColumnVarNameInTable="columnSUB_CON_NAME" msprop:Generator_ColumnPropNameInRow="SUB_CON_NAME" msprop:Generator_ColumnPropNameInTable="SUB_CON_NAMEColumn" msprop:Generator_UserColumnName="SUB_CON_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MILESTONE" msprop:Generator_ColumnVarNameInTable="columnMILESTONE" msprop:Generator_ColumnPropNameInRow="MILESTONE" msprop:Generator_ColumnPropNameInTable="MILESTONEColumn" msprop:Generator_UserColumnName="MILESTONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRIORITY" msprop:Generator_ColumnVarNameInTable="columnPRIORITY" msprop:Generator_ColumnPropNameInRow="PRIORITY" msprop:Generator_ColumnPropNameInTable="PRIORITYColumn" msprop:Generator_UserColumnName="PRIORITY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AREA" msprop:Generator_ColumnVarNameInTable="columnAREA" msprop:Generator_ColumnPropNameInRow="AREA" msprop:Generator_ColumnPropNameInTable="AREAColumn" msprop:Generator_UserColumnName="AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_AREA" msprop:Generator_ColumnVarNameInTable="columnSUB_AREA" msprop:Generator_ColumnPropNameInRow="SUB_AREA" msprop:Generator_ColumnPropNameInTable="SUB_AREAColumn" msprop:Generator_UserColumnName="SUB_AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SCOPE_SHEET" msprop:Generator_ColumnVarNameInTable="columnSCOPE_SHEET" msprop:Generator_ColumnPropNameInRow="SCOPE_SHEET" msprop:Generator_ColumnPropNameInTable="SCOPE_SHEETColumn" msprop:Generator_UserColumnName="SCOPE_SHEET" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SHEET_COUNT" msprop:Generator_ColumnVarNameInTable="columnSHEET_COUNT" msprop:Generator_ColumnPropNameInRow="SHEET_COUNT" msprop:Generator_ColumnPropNameInTable="SHEET_COUNTColumn" msprop:Generator_UserColumnName="SHEET_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WORK_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnWORK_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="WORK_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="WORK_DESCRIPTIONColumn" msprop:Generator_UserColumnName="WORK_DESCRIPTION" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROGRESS" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROGRESS" msprop:Generator_ColumnPropNameInRow="CPECC_PROGRESS" msprop:Generator_ColumnPropNameInTable="CPECC_PROGRESSColumn" msprop:Generator_UserColumnName="CPECC_PROGRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROVIDED" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROVIDED" msprop:Generator_ColumnPropNameInRow="CPECC_PROVIDED" msprop:Generator_ColumnPropNameInTable="CPECC_PROVIDEDColumn" msprop:Generator_UserColumnName="CPECC_PROVIDED" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATED_AMOGH" msprop:Generator_ColumnVarNameInTable="columnUPDATED_AMOGH" msprop:Generator_ColumnPropNameInRow="UPDATED_AMOGH" msprop:Generator_ColumnPropNameInTable="UPDATED_AMOGHColumn" msprop:Generator_UserColumnName="UPDATED_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="BAL_UPDATE_AMOGH" msprop:Generator_ColumnVarNameInTable="columnBAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInRow="BAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInTable="BAL_UPDATE_AMOGHColumn" msprop:Generator_UserColumnName="BAL_UPDATE_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARKS" msprop:Generator_ColumnVarNameInTable="columnREMARKS" msprop:Generator_ColumnPropNameInRow="REMARKS" msprop:Generator_ColumnPropNameInTable="REMARKSColumn" msprop:Generator_UserColumnName="REMARKS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VIEW_SPOOLGEN_PROG" msprop:Generator_TableClassName="VIEW_SPOOLGEN_PROGDataTable" msprop:Generator_TableVarName="tableVIEW_SPOOLGEN_PROG" msprop:Generator_TablePropName="VIEW_SPOOLGEN_PROG" msprop:Generator_RowDeletingName="VIEW_SPOOLGEN_PROGRowDeleting" msprop:Generator_RowChangingName="VIEW_SPOOLGEN_PROGRowChanging" msprop:Generator_RowEvHandlerName="VIEW_SPOOLGEN_PROGRowChangeEventHandler" msprop:Generator_RowDeletedName="VIEW_SPOOLGEN_PROGRowDeleted" msprop:Generator_UserTableName="VIEW_SPOOLGEN_PROG" msprop:Generator_RowChangedName="VIEW_SPOOLGEN_PROGRowChanged" msprop:Generator_RowEvArgName="VIEW_SPOOLGEN_PROGRowChangeEvent" msprop:Generator_RowClassName="VIEW_SPOOLGEN_PROGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROJ_ID" msprop:Generator_ColumnVarNameInTable="columnPROJ_ID" msprop:Generator_ColumnPropNameInRow="PROJ_ID" msprop:Generator_ColumnPropNameInTable="PROJ_IDColumn" msprop:Generator_UserColumnName="PROJ_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JOB_CODE" msprop:Generator_ColumnVarNameInTable="columnJOB_CODE" msprop:Generator_ColumnPropNameInRow="JOB_CODE" msprop:Generator_ColumnPropNameInTable="JOB_CODEColumn" msprop:Generator_UserColumnName="JOB_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JV_OF" msprop:Generator_ColumnVarNameInTable="columnJV_OF" msprop:Generator_ColumnPropNameInRow="JV_OF" msprop:Generator_ColumnPropNameInTable="JV_OFColumn" msprop:Generator_UserColumnName="JV_OF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO1" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO1" msprop:Generator_ColumnPropNameInRow="APP_LOGO1" msprop:Generator_ColumnPropNameInTable="APP_LOGO1Column" msprop:Generator_UserColumnName="APP_LOGO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO2" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO2" msprop:Generator_ColumnPropNameInRow="APP_LOGO2" msprop:Generator_ColumnPropNameInTable="APP_LOGO2Column" msprop:Generator_UserColumnName="APP_LOGO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO3" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO3" msprop:Generator_ColumnPropNameInRow="APP_LOGO3" msprop:Generator_ColumnPropNameInTable="APP_LOGO3Column" msprop:Generator_UserColumnName="APP_LOGO3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE1" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE1" msprop:Generator_ColumnPropNameInRow="REP_TITLE1" msprop:Generator_ColumnPropNameInTable="REP_TITLE1Column" msprop:Generator_UserColumnName="REP_TITLE1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE2" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE2" msprop:Generator_ColumnPropNameInRow="REP_TITLE2" msprop:Generator_ColumnPropNameInTable="REP_TITLE2Column" msprop:Generator_UserColumnName="REP_TITLE2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_CON_NAME" msprop:Generator_ColumnVarNameInTable="columnSUB_CON_NAME" msprop:Generator_ColumnPropNameInRow="SUB_CON_NAME" msprop:Generator_ColumnPropNameInTable="SUB_CON_NAMEColumn" msprop:Generator_UserColumnName="SUB_CON_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MILESTONE" msprop:Generator_ColumnVarNameInTable="columnMILESTONE" msprop:Generator_ColumnPropNameInRow="MILESTONE" msprop:Generator_ColumnPropNameInTable="MILESTONEColumn" msprop:Generator_UserColumnName="MILESTONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AREA_PRIORITY" msprop:Generator_ColumnVarNameInTable="columnAREA_PRIORITY" msprop:Generator_ColumnPropNameInRow="AREA_PRIORITY" msprop:Generator_ColumnPropNameInTable="AREA_PRIORITYColumn" msprop:Generator_UserColumnName="AREA_PRIORITY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AREA" msprop:Generator_ColumnVarNameInTable="columnAREA" msprop:Generator_ColumnPropNameInRow="AREA" msprop:Generator_ColumnPropNameInTable="AREAColumn" msprop:Generator_UserColumnName="AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_AREA" msprop:Generator_ColumnVarNameInTable="columnSUB_AREA" msprop:Generator_ColumnPropNameInRow="SUB_AREA" msprop:Generator_ColumnPropNameInTable="SUB_AREAColumn" msprop:Generator_UserColumnName="SUB_AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SCOPE_SHEET" msprop:Generator_ColumnVarNameInTable="columnSCOPE_SHEET" msprop:Generator_ColumnPropNameInRow="SCOPE_SHEET" msprop:Generator_ColumnPropNameInTable="SCOPE_SHEETColumn" msprop:Generator_UserColumnName="SCOPE_SHEET" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SG_DONE" msprop:Generator_ColumnVarNameInTable="columnSG_DONE" msprop:Generator_ColumnPropNameInRow="SG_DONE" msprop:Generator_ColumnPropNameInTable="SG_DONEColumn" msprop:Generator_UserColumnName="SG_DONE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRANSMITTAL_NUMBER" msprop:Generator_ColumnVarNameInTable="columnTRANSMITTAL_NUMBER" msprop:Generator_ColumnPropNameInRow="TRANSMITTAL_NUMBER" msprop:Generator_ColumnPropNameInTable="TRANSMITTAL_NUMBERColumn" msprop:Generator_UserColumnName="TRANSMITTAL_NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="WORK_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnWORK_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="WORK_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="WORK_DESCRIPTIONColumn" msprop:Generator_UserColumnName="WORK_DESCRIPTION" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROGRESS" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROGRESS" msprop:Generator_ColumnPropNameInRow="CPECC_PROGRESS" msprop:Generator_ColumnPropNameInTable="CPECC_PROGRESSColumn" msprop:Generator_UserColumnName="CPECC_PROGRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROVIDED" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROVIDED" msprop:Generator_ColumnPropNameInRow="CPECC_PROVIDED" msprop:Generator_ColumnPropNameInTable="CPECC_PROVIDEDColumn" msprop:Generator_UserColumnName="CPECC_PROVIDED" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATED_AMOGH" msprop:Generator_ColumnVarNameInTable="columnUPDATED_AMOGH" msprop:Generator_ColumnPropNameInRow="UPDATED_AMOGH" msprop:Generator_ColumnPropNameInTable="UPDATED_AMOGHColumn" msprop:Generator_UserColumnName="UPDATED_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="BAL_UPDATE_AMOGH" msprop:Generator_ColumnVarNameInTable="columnBAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInRow="BAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInTable="BAL_UPDATE_AMOGHColumn" msprop:Generator_UserColumnName="BAL_UPDATE_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARKS" msprop:Generator_ColumnVarNameInTable="columnREMARKS" msprop:Generator_ColumnPropNameInRow="REMARKS" msprop:Generator_ColumnPropNameInTable="REMARKSColumn" msprop:Generator_UserColumnName="REMARKS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VIEW_JOBCARD_PROG" msprop:Generator_TableClassName="VIEW_JOBCARD_PROGDataTable" msprop:Generator_TableVarName="tableVIEW_JOBCARD_PROG" msprop:Generator_TablePropName="VIEW_JOBCARD_PROG" msprop:Generator_RowDeletingName="VIEW_JOBCARD_PROGRowDeleting" msprop:Generator_RowChangingName="VIEW_JOBCARD_PROGRowChanging" msprop:Generator_RowEvHandlerName="VIEW_JOBCARD_PROGRowChangeEventHandler" msprop:Generator_RowDeletedName="VIEW_JOBCARD_PROGRowDeleted" msprop:Generator_UserTableName="VIEW_JOBCARD_PROG" msprop:Generator_RowChangedName="VIEW_JOBCARD_PROGRowChanged" msprop:Generator_RowEvArgName="VIEW_JOBCARD_PROGRowChangeEvent" msprop:Generator_RowClassName="VIEW_JOBCARD_PROGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROJ_ID" msprop:Generator_ColumnVarNameInTable="columnPROJ_ID" msprop:Generator_ColumnPropNameInRow="PROJ_ID" msprop:Generator_ColumnPropNameInTable="PROJ_IDColumn" msprop:Generator_UserColumnName="PROJ_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JOB_CODE" msprop:Generator_ColumnVarNameInTable="columnJOB_CODE" msprop:Generator_ColumnPropNameInRow="JOB_CODE" msprop:Generator_ColumnPropNameInTable="JOB_CODEColumn" msprop:Generator_UserColumnName="JOB_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JV_OF" msprop:Generator_ColumnVarNameInTable="columnJV_OF" msprop:Generator_ColumnPropNameInRow="JV_OF" msprop:Generator_ColumnPropNameInTable="JV_OFColumn" msprop:Generator_UserColumnName="JV_OF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO1" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO1" msprop:Generator_ColumnPropNameInRow="APP_LOGO1" msprop:Generator_ColumnPropNameInTable="APP_LOGO1Column" msprop:Generator_UserColumnName="APP_LOGO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO2" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO2" msprop:Generator_ColumnPropNameInRow="APP_LOGO2" msprop:Generator_ColumnPropNameInTable="APP_LOGO2Column" msprop:Generator_UserColumnName="APP_LOGO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO3" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO3" msprop:Generator_ColumnPropNameInRow="APP_LOGO3" msprop:Generator_ColumnPropNameInTable="APP_LOGO3Column" msprop:Generator_UserColumnName="APP_LOGO3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE1" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE1" msprop:Generator_ColumnPropNameInRow="REP_TITLE1" msprop:Generator_ColumnPropNameInTable="REP_TITLE1Column" msprop:Generator_UserColumnName="REP_TITLE1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE2" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE2" msprop:Generator_ColumnPropNameInRow="REP_TITLE2" msprop:Generator_ColumnPropNameInTable="REP_TITLE2Column" msprop:Generator_UserColumnName="REP_TITLE2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_CON_NAME" msprop:Generator_ColumnVarNameInTable="columnSUB_CON_NAME" msprop:Generator_ColumnPropNameInRow="SUB_CON_NAME" msprop:Generator_ColumnPropNameInTable="SUB_CON_NAMEColumn" msprop:Generator_UserColumnName="SUB_CON_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MILESTONE" msprop:Generator_ColumnVarNameInTable="columnMILESTONE" msprop:Generator_ColumnPropNameInRow="MILESTONE" msprop:Generator_ColumnPropNameInTable="MILESTONEColumn" msprop:Generator_UserColumnName="MILESTONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AREA_PRIORITY" msprop:Generator_ColumnVarNameInTable="columnAREA_PRIORITY" msprop:Generator_ColumnPropNameInRow="AREA_PRIORITY" msprop:Generator_ColumnPropNameInTable="AREA_PRIORITYColumn" msprop:Generator_UserColumnName="AREA_PRIORITY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AREA" msprop:Generator_ColumnVarNameInTable="columnAREA" msprop:Generator_ColumnPropNameInRow="AREA" msprop:Generator_ColumnPropNameInTable="AREAColumn" msprop:Generator_UserColumnName="AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_AREA" msprop:Generator_ColumnVarNameInTable="columnSUB_AREA" msprop:Generator_ColumnPropNameInRow="SUB_AREA" msprop:Generator_ColumnPropNameInTable="SUB_AREAColumn" msprop:Generator_UserColumnName="SUB_AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SCOPE_SHEET" msprop:Generator_ColumnVarNameInTable="columnSCOPE_SHEET" msprop:Generator_ColumnPropNameInRow="SCOPE_SHEET" msprop:Generator_ColumnPropNameInTable="SCOPE_SHEETColumn" msprop:Generator_UserColumnName="SCOPE_SHEET" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SHOP_INCH_DIA" msprop:Generator_ColumnVarNameInTable="columnSHOP_INCH_DIA" msprop:Generator_ColumnPropNameInRow="SHOP_INCH_DIA" msprop:Generator_ColumnPropNameInTable="SHOP_INCH_DIAColumn" msprop:Generator_UserColumnName="SHOP_INCH_DIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FIELD_INCH_DIA" msprop:Generator_ColumnVarNameInTable="columnFIELD_INCH_DIA" msprop:Generator_ColumnPropNameInRow="FIELD_INCH_DIA" msprop:Generator_ColumnPropNameInTable="FIELD_INCH_DIAColumn" msprop:Generator_UserColumnName="FIELD_INCH_DIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JOINTS" msprop:Generator_ColumnVarNameInTable="columnJOINTS" msprop:Generator_ColumnPropNameInRow="JOINTS" msprop:Generator_ColumnPropNameInTable="JOINTSColumn" msprop:Generator_UserColumnName="JOINTS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SPL_JOB_CARD" msprop:Generator_ColumnVarNameInTable="columnSPL_JOB_CARD" msprop:Generator_ColumnPropNameInRow="SPL_JOB_CARD" msprop:Generator_ColumnPropNameInTable="SPL_JOB_CARDColumn" msprop:Generator_UserColumnName="SPL_JOB_CARD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WORK_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnWORK_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="WORK_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="WORK_DESCRIPTIONColumn" msprop:Generator_UserColumnName="WORK_DESCRIPTION" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROGRESS" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROGRESS" msprop:Generator_ColumnPropNameInRow="CPECC_PROGRESS" msprop:Generator_ColumnPropNameInTable="CPECC_PROGRESSColumn" msprop:Generator_UserColumnName="CPECC_PROGRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROVIDED" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROVIDED" msprop:Generator_ColumnPropNameInRow="CPECC_PROVIDED" msprop:Generator_ColumnPropNameInTable="CPECC_PROVIDEDColumn" msprop:Generator_UserColumnName="CPECC_PROVIDED" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATED_AMOGH" msprop:Generator_ColumnVarNameInTable="columnUPDATED_AMOGH" msprop:Generator_ColumnPropNameInRow="UPDATED_AMOGH" msprop:Generator_ColumnPropNameInTable="UPDATED_AMOGHColumn" msprop:Generator_UserColumnName="UPDATED_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="BAL_UPDATE_AMOGH" msprop:Generator_ColumnVarNameInTable="columnBAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInRow="BAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInTable="BAL_UPDATE_AMOGHColumn" msprop:Generator_UserColumnName="BAL_UPDATE_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARKS" msprop:Generator_ColumnVarNameInTable="columnREMARKS" msprop:Generator_ColumnPropNameInRow="REMARKS" msprop:Generator_ColumnPropNameInTable="REMARKSColumn" msprop:Generator_UserColumnName="REMARKS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VIEW_FITUP_PROG" msprop:Generator_TableClassName="VIEW_FITUP_PROGDataTable" msprop:Generator_TableVarName="tableVIEW_FITUP_PROG" msprop:Generator_TablePropName="VIEW_FITUP_PROG" msprop:Generator_RowDeletingName="VIEW_FITUP_PROGRowDeleting" msprop:Generator_RowChangingName="VIEW_FITUP_PROGRowChanging" msprop:Generator_RowEvHandlerName="VIEW_FITUP_PROGRowChangeEventHandler" msprop:Generator_RowDeletedName="VIEW_FITUP_PROGRowDeleted" msprop:Generator_UserTableName="VIEW_FITUP_PROG" msprop:Generator_RowChangedName="VIEW_FITUP_PROGRowChanged" msprop:Generator_RowEvArgName="VIEW_FITUP_PROGRowChangeEvent" msprop:Generator_RowClassName="VIEW_FITUP_PROGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROJ_ID" msprop:Generator_ColumnVarNameInTable="columnPROJ_ID" msprop:Generator_ColumnPropNameInRow="PROJ_ID" msprop:Generator_ColumnPropNameInTable="PROJ_IDColumn" msprop:Generator_UserColumnName="PROJ_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JOB_CODE" msprop:Generator_ColumnVarNameInTable="columnJOB_CODE" msprop:Generator_ColumnPropNameInRow="JOB_CODE" msprop:Generator_ColumnPropNameInTable="JOB_CODEColumn" msprop:Generator_UserColumnName="JOB_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JV_OF" msprop:Generator_ColumnVarNameInTable="columnJV_OF" msprop:Generator_ColumnPropNameInRow="JV_OF" msprop:Generator_ColumnPropNameInTable="JV_OFColumn" msprop:Generator_UserColumnName="JV_OF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO1" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO1" msprop:Generator_ColumnPropNameInRow="APP_LOGO1" msprop:Generator_ColumnPropNameInTable="APP_LOGO1Column" msprop:Generator_UserColumnName="APP_LOGO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO2" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO2" msprop:Generator_ColumnPropNameInRow="APP_LOGO2" msprop:Generator_ColumnPropNameInTable="APP_LOGO2Column" msprop:Generator_UserColumnName="APP_LOGO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO3" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO3" msprop:Generator_ColumnPropNameInRow="APP_LOGO3" msprop:Generator_ColumnPropNameInTable="APP_LOGO3Column" msprop:Generator_UserColumnName="APP_LOGO3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE1" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE1" msprop:Generator_ColumnPropNameInRow="REP_TITLE1" msprop:Generator_ColumnPropNameInTable="REP_TITLE1Column" msprop:Generator_UserColumnName="REP_TITLE1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE2" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE2" msprop:Generator_ColumnPropNameInRow="REP_TITLE2" msprop:Generator_ColumnPropNameInTable="REP_TITLE2Column" msprop:Generator_UserColumnName="REP_TITLE2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_CON_NAME" msprop:Generator_ColumnVarNameInTable="columnSUB_CON_NAME" msprop:Generator_ColumnPropNameInRow="SUB_CON_NAME" msprop:Generator_ColumnPropNameInTable="SUB_CON_NAMEColumn" msprop:Generator_UserColumnName="SUB_CON_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MILESTONE" msprop:Generator_ColumnVarNameInTable="columnMILESTONE" msprop:Generator_ColumnPropNameInRow="MILESTONE" msprop:Generator_ColumnPropNameInTable="MILESTONEColumn" msprop:Generator_UserColumnName="MILESTONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AREA_PRIORITY" msprop:Generator_ColumnVarNameInTable="columnAREA_PRIORITY" msprop:Generator_ColumnPropNameInRow="AREA_PRIORITY" msprop:Generator_ColumnPropNameInTable="AREA_PRIORITYColumn" msprop:Generator_UserColumnName="AREA_PRIORITY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AREA" msprop:Generator_ColumnVarNameInTable="columnAREA" msprop:Generator_ColumnPropNameInRow="AREA" msprop:Generator_ColumnPropNameInTable="AREAColumn" msprop:Generator_UserColumnName="AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_AREA" msprop:Generator_ColumnVarNameInTable="columnSUB_AREA" msprop:Generator_ColumnPropNameInRow="SUB_AREA" msprop:Generator_ColumnPropNameInTable="SUB_AREAColumn" msprop:Generator_UserColumnName="SUB_AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SCOPE_SHEET" msprop:Generator_ColumnVarNameInTable="columnSCOPE_SHEET" msprop:Generator_ColumnPropNameInRow="SCOPE_SHEET" msprop:Generator_ColumnPropNameInTable="SCOPE_SHEETColumn" msprop:Generator_UserColumnName="SCOPE_SHEET" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SHOP_INCH_DIA" msprop:Generator_ColumnVarNameInTable="columnSHOP_INCH_DIA" msprop:Generator_ColumnPropNameInRow="SHOP_INCH_DIA" msprop:Generator_ColumnPropNameInTable="SHOP_INCH_DIAColumn" msprop:Generator_UserColumnName="SHOP_INCH_DIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FIELD_INCH_DIA" msprop:Generator_ColumnVarNameInTable="columnFIELD_INCH_DIA" msprop:Generator_ColumnPropNameInRow="FIELD_INCH_DIA" msprop:Generator_ColumnPropNameInTable="FIELD_INCH_DIAColumn" msprop:Generator_UserColumnName="FIELD_INCH_DIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TOTAL_JOINTS" msprop:Generator_ColumnVarNameInTable="columnTOTAL_JOINTS" msprop:Generator_ColumnPropNameInRow="TOTAL_JOINTS" msprop:Generator_ColumnPropNameInTable="TOTAL_JOINTSColumn" msprop:Generator_UserColumnName="TOTAL_JOINTS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FITUP_INCH_DIA" msprop:Generator_ColumnVarNameInTable="columnFITUP_INCH_DIA" msprop:Generator_ColumnPropNameInRow="FITUP_INCH_DIA" msprop:Generator_ColumnPropNameInTable="FITUP_INCH_DIAColumn" msprop:Generator_UserColumnName="FITUP_INCH_DIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FITUP" msprop:Generator_ColumnVarNameInTable="columnFITUP" msprop:Generator_ColumnPropNameInRow="FITUP" msprop:Generator_ColumnPropNameInTable="FITUPColumn" msprop:Generator_UserColumnName="FITUP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WORK_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnWORK_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="WORK_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="WORK_DESCRIPTIONColumn" msprop:Generator_UserColumnName="WORK_DESCRIPTION" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROGRESS" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROGRESS" msprop:Generator_ColumnPropNameInRow="CPECC_PROGRESS" msprop:Generator_ColumnPropNameInTable="CPECC_PROGRESSColumn" msprop:Generator_UserColumnName="CPECC_PROGRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROVIDED" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROVIDED" msprop:Generator_ColumnPropNameInRow="CPECC_PROVIDED" msprop:Generator_ColumnPropNameInTable="CPECC_PROVIDEDColumn" msprop:Generator_UserColumnName="CPECC_PROVIDED" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATED_AMOGH" msprop:Generator_ColumnVarNameInTable="columnUPDATED_AMOGH" msprop:Generator_ColumnPropNameInRow="UPDATED_AMOGH" msprop:Generator_ColumnPropNameInTable="UPDATED_AMOGHColumn" msprop:Generator_UserColumnName="UPDATED_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="BAL_UPDATE_AMOGH" msprop:Generator_ColumnVarNameInTable="columnBAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInRow="BAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInTable="BAL_UPDATE_AMOGHColumn" msprop:Generator_UserColumnName="BAL_UPDATE_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARKS" msprop:Generator_ColumnVarNameInTable="columnREMARKS" msprop:Generator_ColumnPropNameInRow="REMARKS" msprop:Generator_ColumnPropNameInTable="REMARKSColumn" msprop:Generator_UserColumnName="REMARKS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VIEW_WELD_PROG" msprop:Generator_TableClassName="VIEW_WELD_PROGDataTable" msprop:Generator_TableVarName="tableVIEW_WELD_PROG" msprop:Generator_TablePropName="VIEW_WELD_PROG" msprop:Generator_RowDeletingName="VIEW_WELD_PROGRowDeleting" msprop:Generator_RowChangingName="VIEW_WELD_PROGRowChanging" msprop:Generator_RowEvHandlerName="VIEW_WELD_PROGRowChangeEventHandler" msprop:Generator_RowDeletedName="VIEW_WELD_PROGRowDeleted" msprop:Generator_UserTableName="VIEW_WELD_PROG" msprop:Generator_RowChangedName="VIEW_WELD_PROGRowChanged" msprop:Generator_RowEvArgName="VIEW_WELD_PROGRowChangeEvent" msprop:Generator_RowClassName="VIEW_WELD_PROGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROJ_ID" msprop:Generator_ColumnVarNameInTable="columnPROJ_ID" msprop:Generator_ColumnPropNameInRow="PROJ_ID" msprop:Generator_ColumnPropNameInTable="PROJ_IDColumn" msprop:Generator_UserColumnName="PROJ_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JOB_CODE" msprop:Generator_ColumnVarNameInTable="columnJOB_CODE" msprop:Generator_ColumnPropNameInRow="JOB_CODE" msprop:Generator_ColumnPropNameInTable="JOB_CODEColumn" msprop:Generator_UserColumnName="JOB_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JV_OF" msprop:Generator_ColumnVarNameInTable="columnJV_OF" msprop:Generator_ColumnPropNameInRow="JV_OF" msprop:Generator_ColumnPropNameInTable="JV_OFColumn" msprop:Generator_UserColumnName="JV_OF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO1" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO1" msprop:Generator_ColumnPropNameInRow="APP_LOGO1" msprop:Generator_ColumnPropNameInTable="APP_LOGO1Column" msprop:Generator_UserColumnName="APP_LOGO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO2" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO2" msprop:Generator_ColumnPropNameInRow="APP_LOGO2" msprop:Generator_ColumnPropNameInTable="APP_LOGO2Column" msprop:Generator_UserColumnName="APP_LOGO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO3" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO3" msprop:Generator_ColumnPropNameInRow="APP_LOGO3" msprop:Generator_ColumnPropNameInTable="APP_LOGO3Column" msprop:Generator_UserColumnName="APP_LOGO3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE1" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE1" msprop:Generator_ColumnPropNameInRow="REP_TITLE1" msprop:Generator_ColumnPropNameInTable="REP_TITLE1Column" msprop:Generator_UserColumnName="REP_TITLE1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE2" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE2" msprop:Generator_ColumnPropNameInRow="REP_TITLE2" msprop:Generator_ColumnPropNameInTable="REP_TITLE2Column" msprop:Generator_UserColumnName="REP_TITLE2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_CON_NAME" msprop:Generator_ColumnVarNameInTable="columnSUB_CON_NAME" msprop:Generator_ColumnPropNameInRow="SUB_CON_NAME" msprop:Generator_ColumnPropNameInTable="SUB_CON_NAMEColumn" msprop:Generator_UserColumnName="SUB_CON_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MILESTONE" msprop:Generator_ColumnVarNameInTable="columnMILESTONE" msprop:Generator_ColumnPropNameInRow="MILESTONE" msprop:Generator_ColumnPropNameInTable="MILESTONEColumn" msprop:Generator_UserColumnName="MILESTONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AREA_PRIORITY" msprop:Generator_ColumnVarNameInTable="columnAREA_PRIORITY" msprop:Generator_ColumnPropNameInRow="AREA_PRIORITY" msprop:Generator_ColumnPropNameInTable="AREA_PRIORITYColumn" msprop:Generator_UserColumnName="AREA_PRIORITY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AREA" msprop:Generator_ColumnVarNameInTable="columnAREA" msprop:Generator_ColumnPropNameInRow="AREA" msprop:Generator_ColumnPropNameInTable="AREAColumn" msprop:Generator_UserColumnName="AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_AREA" msprop:Generator_ColumnVarNameInTable="columnSUB_AREA" msprop:Generator_ColumnPropNameInRow="SUB_AREA" msprop:Generator_ColumnPropNameInTable="SUB_AREAColumn" msprop:Generator_UserColumnName="SUB_AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SCOPE_SHEET" msprop:Generator_ColumnVarNameInTable="columnSCOPE_SHEET" msprop:Generator_ColumnPropNameInRow="SCOPE_SHEET" msprop:Generator_ColumnPropNameInTable="SCOPE_SHEETColumn" msprop:Generator_UserColumnName="SCOPE_SHEET" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SHOP_INCH_DIA" msprop:Generator_ColumnVarNameInTable="columnSHOP_INCH_DIA" msprop:Generator_ColumnPropNameInRow="SHOP_INCH_DIA" msprop:Generator_ColumnPropNameInTable="SHOP_INCH_DIAColumn" msprop:Generator_UserColumnName="SHOP_INCH_DIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FIELD_INCH_DIA" msprop:Generator_ColumnVarNameInTable="columnFIELD_INCH_DIA" msprop:Generator_ColumnPropNameInRow="FIELD_INCH_DIA" msprop:Generator_ColumnPropNameInTable="FIELD_INCH_DIAColumn" msprop:Generator_UserColumnName="FIELD_INCH_DIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TOTAL_JOINTS" msprop:Generator_ColumnVarNameInTable="columnTOTAL_JOINTS" msprop:Generator_ColumnPropNameInRow="TOTAL_JOINTS" msprop:Generator_ColumnPropNameInTable="TOTAL_JOINTSColumn" msprop:Generator_UserColumnName="TOTAL_JOINTS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WELDED_INCH_DIA" msprop:Generator_ColumnVarNameInTable="columnWELDED_INCH_DIA" msprop:Generator_ColumnPropNameInRow="WELDED_INCH_DIA" msprop:Generator_ColumnPropNameInTable="WELDED_INCH_DIAColumn" msprop:Generator_UserColumnName="WELDED_INCH_DIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WELDED" msprop:Generator_ColumnVarNameInTable="columnWELDED" msprop:Generator_ColumnPropNameInRow="WELDED" msprop:Generator_ColumnPropNameInTable="WELDEDColumn" msprop:Generator_UserColumnName="WELDED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WORK_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnWORK_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="WORK_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="WORK_DESCRIPTIONColumn" msprop:Generator_UserColumnName="WORK_DESCRIPTION" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROGRESS" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROGRESS" msprop:Generator_ColumnPropNameInRow="CPECC_PROGRESS" msprop:Generator_ColumnPropNameInTable="CPECC_PROGRESSColumn" msprop:Generator_UserColumnName="CPECC_PROGRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROVIDED" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROVIDED" msprop:Generator_ColumnPropNameInRow="CPECC_PROVIDED" msprop:Generator_ColumnPropNameInTable="CPECC_PROVIDEDColumn" msprop:Generator_UserColumnName="CPECC_PROVIDED" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATED_AMOGH" msprop:Generator_ColumnVarNameInTable="columnUPDATED_AMOGH" msprop:Generator_ColumnPropNameInRow="UPDATED_AMOGH" msprop:Generator_ColumnPropNameInTable="UPDATED_AMOGHColumn" msprop:Generator_UserColumnName="UPDATED_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="BAL_UPDATE_AMOGH" msprop:Generator_ColumnVarNameInTable="columnBAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInRow="BAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInTable="BAL_UPDATE_AMOGHColumn" msprop:Generator_UserColumnName="BAL_UPDATE_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARKS" msprop:Generator_ColumnVarNameInTable="columnREMARKS" msprop:Generator_ColumnPropNameInRow="REMARKS" msprop:Generator_ColumnPropNameInTable="REMARKSColumn" msprop:Generator_UserColumnName="REMARKS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VIEW_NDT_REQUESTED" msprop:Generator_TableClassName="VIEW_NDT_REQUESTEDDataTable" msprop:Generator_TableVarName="tableVIEW_NDT_REQUESTED" msprop:Generator_TablePropName="VIEW_NDT_REQUESTED" msprop:Generator_RowDeletingName="VIEW_NDT_REQUESTEDRowDeleting" msprop:Generator_RowChangingName="VIEW_NDT_REQUESTEDRowChanging" msprop:Generator_RowEvHandlerName="VIEW_NDT_REQUESTEDRowChangeEventHandler" msprop:Generator_RowDeletedName="VIEW_NDT_REQUESTEDRowDeleted" msprop:Generator_UserTableName="VIEW_NDT_REQUESTED" msprop:Generator_RowChangedName="VIEW_NDT_REQUESTEDRowChanged" msprop:Generator_RowEvArgName="VIEW_NDT_REQUESTEDRowChangeEvent" msprop:Generator_RowClassName="VIEW_NDT_REQUESTEDRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROJ_ID" msprop:Generator_ColumnVarNameInTable="columnPROJ_ID" msprop:Generator_ColumnPropNameInRow="PROJ_ID" msprop:Generator_ColumnPropNameInTable="PROJ_IDColumn" msprop:Generator_UserColumnName="PROJ_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JOB_CODE" msprop:Generator_ColumnVarNameInTable="columnJOB_CODE" msprop:Generator_ColumnPropNameInRow="JOB_CODE" msprop:Generator_ColumnPropNameInTable="JOB_CODEColumn" msprop:Generator_UserColumnName="JOB_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JV_OF" msprop:Generator_ColumnVarNameInTable="columnJV_OF" msprop:Generator_ColumnPropNameInRow="JV_OF" msprop:Generator_ColumnPropNameInTable="JV_OFColumn" msprop:Generator_UserColumnName="JV_OF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO1" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO1" msprop:Generator_ColumnPropNameInRow="APP_LOGO1" msprop:Generator_ColumnPropNameInTable="APP_LOGO1Column" msprop:Generator_UserColumnName="APP_LOGO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO2" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO2" msprop:Generator_ColumnPropNameInRow="APP_LOGO2" msprop:Generator_ColumnPropNameInTable="APP_LOGO2Column" msprop:Generator_UserColumnName="APP_LOGO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO3" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO3" msprop:Generator_ColumnPropNameInRow="APP_LOGO3" msprop:Generator_ColumnPropNameInTable="APP_LOGO3Column" msprop:Generator_UserColumnName="APP_LOGO3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE1" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE1" msprop:Generator_ColumnPropNameInRow="REP_TITLE1" msprop:Generator_ColumnPropNameInTable="REP_TITLE1Column" msprop:Generator_UserColumnName="REP_TITLE1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE2" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE2" msprop:Generator_ColumnPropNameInRow="REP_TITLE2" msprop:Generator_ColumnPropNameInTable="REP_TITLE2Column" msprop:Generator_UserColumnName="REP_TITLE2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_CON_NAME" msprop:Generator_ColumnVarNameInTable="columnSUB_CON_NAME" msprop:Generator_ColumnPropNameInRow="SUB_CON_NAME" msprop:Generator_ColumnPropNameInTable="SUB_CON_NAMEColumn" msprop:Generator_UserColumnName="SUB_CON_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MILESTONE" msprop:Generator_ColumnVarNameInTable="columnMILESTONE" msprop:Generator_ColumnPropNameInRow="MILESTONE" msprop:Generator_ColumnPropNameInTable="MILESTONEColumn" msprop:Generator_UserColumnName="MILESTONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AREA_PRIORITY" msprop:Generator_ColumnVarNameInTable="columnAREA_PRIORITY" msprop:Generator_ColumnPropNameInRow="AREA_PRIORITY" msprop:Generator_ColumnPropNameInTable="AREA_PRIORITYColumn" msprop:Generator_UserColumnName="AREA_PRIORITY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AREA" msprop:Generator_ColumnVarNameInTable="columnAREA" msprop:Generator_ColumnPropNameInRow="AREA" msprop:Generator_ColumnPropNameInTable="AREAColumn" msprop:Generator_UserColumnName="AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_AREA" msprop:Generator_ColumnVarNameInTable="columnSUB_AREA" msprop:Generator_ColumnPropNameInRow="SUB_AREA" msprop:Generator_ColumnPropNameInTable="SUB_AREAColumn" msprop:Generator_UserColumnName="SUB_AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SCOPE_SHEET" msprop:Generator_ColumnVarNameInTable="columnSCOPE_SHEET" msprop:Generator_ColumnPropNameInRow="SCOPE_SHEET" msprop:Generator_ColumnPropNameInTable="SCOPE_SHEETColumn" msprop:Generator_UserColumnName="SCOPE_SHEET" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SHOP_INCH_DIA" msprop:Generator_ColumnVarNameInTable="columnSHOP_INCH_DIA" msprop:Generator_ColumnPropNameInRow="SHOP_INCH_DIA" msprop:Generator_ColumnPropNameInTable="SHOP_INCH_DIAColumn" msprop:Generator_UserColumnName="SHOP_INCH_DIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FIELD_INCH_DIA" msprop:Generator_ColumnVarNameInTable="columnFIELD_INCH_DIA" msprop:Generator_ColumnPropNameInRow="FIELD_INCH_DIA" msprop:Generator_ColumnPropNameInTable="FIELD_INCH_DIAColumn" msprop:Generator_UserColumnName="FIELD_INCH_DIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TOTAL_JOINTS" msprop:Generator_ColumnVarNameInTable="columnTOTAL_JOINTS" msprop:Generator_ColumnPropNameInRow="TOTAL_JOINTS" msprop:Generator_ColumnPropNameInTable="TOTAL_JOINTSColumn" msprop:Generator_UserColumnName="TOTAL_JOINTS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NDE_REQ_JOINTS" msprop:Generator_ColumnVarNameInTable="columnNDE_REQ_JOINTS" msprop:Generator_ColumnPropNameInRow="NDE_REQ_JOINTS" msprop:Generator_ColumnPropNameInTable="NDE_REQ_JOINTSColumn" msprop:Generator_UserColumnName="NDE_REQ_JOINTS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NDE_DONE" msprop:Generator_ColumnVarNameInTable="columnNDE_DONE" msprop:Generator_ColumnPropNameInRow="NDE_DONE" msprop:Generator_ColumnPropNameInTable="NDE_DONEColumn" msprop:Generator_UserColumnName="NDE_DONE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WORK_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnWORK_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="WORK_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="WORK_DESCRIPTIONColumn" msprop:Generator_UserColumnName="WORK_DESCRIPTION" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROGRESS" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROGRESS" msprop:Generator_ColumnPropNameInRow="CPECC_PROGRESS" msprop:Generator_ColumnPropNameInTable="CPECC_PROGRESSColumn" msprop:Generator_UserColumnName="CPECC_PROGRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROVIDED" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROVIDED" msprop:Generator_ColumnPropNameInRow="CPECC_PROVIDED" msprop:Generator_ColumnPropNameInTable="CPECC_PROVIDEDColumn" msprop:Generator_UserColumnName="CPECC_PROVIDED" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATED_AMOGH" msprop:Generator_ColumnVarNameInTable="columnUPDATED_AMOGH" msprop:Generator_ColumnPropNameInRow="UPDATED_AMOGH" msprop:Generator_ColumnPropNameInTable="UPDATED_AMOGHColumn" msprop:Generator_UserColumnName="UPDATED_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="BAL_UPDATE_AMOGH" msprop:Generator_ColumnVarNameInTable="columnBAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInRow="BAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInTable="BAL_UPDATE_AMOGHColumn" msprop:Generator_UserColumnName="BAL_UPDATE_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARKS" msprop:Generator_ColumnVarNameInTable="columnREMARKS" msprop:Generator_ColumnPropNameInRow="REMARKS" msprop:Generator_ColumnPropNameInTable="REMARKSColumn" msprop:Generator_UserColumnName="REMARKS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VIEW_NDE_PROG" msprop:Generator_TableClassName="VIEW_NDE_PROGDataTable" msprop:Generator_TableVarName="tableVIEW_NDE_PROG" msprop:Generator_TablePropName="VIEW_NDE_PROG" msprop:Generator_RowDeletingName="VIEW_NDE_PROGRowDeleting" msprop:Generator_RowChangingName="VIEW_NDE_PROGRowChanging" msprop:Generator_RowEvHandlerName="VIEW_NDE_PROGRowChangeEventHandler" msprop:Generator_RowDeletedName="VIEW_NDE_PROGRowDeleted" msprop:Generator_UserTableName="VIEW_NDE_PROG" msprop:Generator_RowChangedName="VIEW_NDE_PROGRowChanged" msprop:Generator_RowEvArgName="VIEW_NDE_PROGRowChangeEvent" msprop:Generator_RowClassName="VIEW_NDE_PROGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROJ_ID" msprop:Generator_ColumnVarNameInTable="columnPROJ_ID" msprop:Generator_ColumnPropNameInRow="PROJ_ID" msprop:Generator_ColumnPropNameInTable="PROJ_IDColumn" msprop:Generator_UserColumnName="PROJ_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JOB_CODE" msprop:Generator_ColumnVarNameInTable="columnJOB_CODE" msprop:Generator_ColumnPropNameInRow="JOB_CODE" msprop:Generator_ColumnPropNameInTable="JOB_CODEColumn" msprop:Generator_UserColumnName="JOB_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JV_OF" msprop:Generator_ColumnVarNameInTable="columnJV_OF" msprop:Generator_ColumnPropNameInRow="JV_OF" msprop:Generator_ColumnPropNameInTable="JV_OFColumn" msprop:Generator_UserColumnName="JV_OF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO1" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO1" msprop:Generator_ColumnPropNameInRow="APP_LOGO1" msprop:Generator_ColumnPropNameInTable="APP_LOGO1Column" msprop:Generator_UserColumnName="APP_LOGO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO2" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO2" msprop:Generator_ColumnPropNameInRow="APP_LOGO2" msprop:Generator_ColumnPropNameInTable="APP_LOGO2Column" msprop:Generator_UserColumnName="APP_LOGO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO3" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO3" msprop:Generator_ColumnPropNameInRow="APP_LOGO3" msprop:Generator_ColumnPropNameInTable="APP_LOGO3Column" msprop:Generator_UserColumnName="APP_LOGO3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE1" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE1" msprop:Generator_ColumnPropNameInRow="REP_TITLE1" msprop:Generator_ColumnPropNameInTable="REP_TITLE1Column" msprop:Generator_UserColumnName="REP_TITLE1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE2" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE2" msprop:Generator_ColumnPropNameInRow="REP_TITLE2" msprop:Generator_ColumnPropNameInTable="REP_TITLE2Column" msprop:Generator_UserColumnName="REP_TITLE2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_CON_NAME" msprop:Generator_ColumnVarNameInTable="columnSUB_CON_NAME" msprop:Generator_ColumnPropNameInRow="SUB_CON_NAME" msprop:Generator_ColumnPropNameInTable="SUB_CON_NAMEColumn" msprop:Generator_UserColumnName="SUB_CON_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MILESTONE" msprop:Generator_ColumnVarNameInTable="columnMILESTONE" msprop:Generator_ColumnPropNameInRow="MILESTONE" msprop:Generator_ColumnPropNameInTable="MILESTONEColumn" msprop:Generator_UserColumnName="MILESTONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AREA_PRIORITY" msprop:Generator_ColumnVarNameInTable="columnAREA_PRIORITY" msprop:Generator_ColumnPropNameInRow="AREA_PRIORITY" msprop:Generator_ColumnPropNameInTable="AREA_PRIORITYColumn" msprop:Generator_UserColumnName="AREA_PRIORITY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AREA" msprop:Generator_ColumnVarNameInTable="columnAREA" msprop:Generator_ColumnPropNameInRow="AREA" msprop:Generator_ColumnPropNameInTable="AREAColumn" msprop:Generator_UserColumnName="AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_AREA" msprop:Generator_ColumnVarNameInTable="columnSUB_AREA" msprop:Generator_ColumnPropNameInRow="SUB_AREA" msprop:Generator_ColumnPropNameInTable="SUB_AREAColumn" msprop:Generator_UserColumnName="SUB_AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SCOPE_SHEET" msprop:Generator_ColumnVarNameInTable="columnSCOPE_SHEET" msprop:Generator_ColumnPropNameInRow="SCOPE_SHEET" msprop:Generator_ColumnPropNameInTable="SCOPE_SHEETColumn" msprop:Generator_UserColumnName="SCOPE_SHEET" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SHOP_INCH_DIA" msprop:Generator_ColumnVarNameInTable="columnSHOP_INCH_DIA" msprop:Generator_ColumnPropNameInRow="SHOP_INCH_DIA" msprop:Generator_ColumnPropNameInTable="SHOP_INCH_DIAColumn" msprop:Generator_UserColumnName="SHOP_INCH_DIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FIELD_INCH_DIA" msprop:Generator_ColumnVarNameInTable="columnFIELD_INCH_DIA" msprop:Generator_ColumnPropNameInRow="FIELD_INCH_DIA" msprop:Generator_ColumnPropNameInTable="FIELD_INCH_DIAColumn" msprop:Generator_UserColumnName="FIELD_INCH_DIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TOTAL_JOINTS" msprop:Generator_ColumnVarNameInTable="columnTOTAL_JOINTS" msprop:Generator_ColumnPropNameInRow="TOTAL_JOINTS" msprop:Generator_ColumnPropNameInTable="TOTAL_JOINTSColumn" msprop:Generator_UserColumnName="TOTAL_JOINTS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NDE_JOINTS" msprop:Generator_ColumnVarNameInTable="columnNDE_JOINTS" msprop:Generator_ColumnPropNameInRow="NDE_JOINTS" msprop:Generator_ColumnPropNameInTable="NDE_JOINTSColumn" msprop:Generator_UserColumnName="NDE_JOINTS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NDE_DONE" msprop:Generator_ColumnVarNameInTable="columnNDE_DONE" msprop:Generator_ColumnPropNameInRow="NDE_DONE" msprop:Generator_ColumnPropNameInTable="NDE_DONEColumn" msprop:Generator_UserColumnName="NDE_DONE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WORK_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnWORK_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="WORK_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="WORK_DESCRIPTIONColumn" msprop:Generator_UserColumnName="WORK_DESCRIPTION" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROGRESS" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROGRESS" msprop:Generator_ColumnPropNameInRow="CPECC_PROGRESS" msprop:Generator_ColumnPropNameInTable="CPECC_PROGRESSColumn" msprop:Generator_UserColumnName="CPECC_PROGRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROVIDED" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROVIDED" msprop:Generator_ColumnPropNameInRow="CPECC_PROVIDED" msprop:Generator_ColumnPropNameInTable="CPECC_PROVIDEDColumn" msprop:Generator_UserColumnName="CPECC_PROVIDED" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATED_AMOGH" msprop:Generator_ColumnVarNameInTable="columnUPDATED_AMOGH" msprop:Generator_ColumnPropNameInRow="UPDATED_AMOGH" msprop:Generator_ColumnPropNameInTable="UPDATED_AMOGHColumn" msprop:Generator_UserColumnName="UPDATED_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="BAL_UPDATE_AMOGH" msprop:Generator_ColumnVarNameInTable="columnBAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInRow="BAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInTable="BAL_UPDATE_AMOGHColumn" msprop:Generator_UserColumnName="BAL_UPDATE_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARKS" msprop:Generator_ColumnVarNameInTable="columnREMARKS" msprop:Generator_ColumnPropNameInRow="REMARKS" msprop:Generator_ColumnPropNameInTable="REMARKSColumn" msprop:Generator_UserColumnName="REMARKS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VIEW_MIV_PROG" msprop:Generator_TableClassName="VIEW_MIV_PROGDataTable" msprop:Generator_TableVarName="tableVIEW_MIV_PROG" msprop:Generator_TablePropName="VIEW_MIV_PROG" msprop:Generator_RowDeletingName="VIEW_MIV_PROGRowDeleting" msprop:Generator_RowChangingName="VIEW_MIV_PROGRowChanging" msprop:Generator_RowEvHandlerName="VIEW_MIV_PROGRowChangeEventHandler" msprop:Generator_RowDeletedName="VIEW_MIV_PROGRowDeleted" msprop:Generator_UserTableName="VIEW_MIV_PROG" msprop:Generator_RowChangedName="VIEW_MIV_PROGRowChanged" msprop:Generator_RowEvArgName="VIEW_MIV_PROGRowChangeEvent" msprop:Generator_RowClassName="VIEW_MIV_PROGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROJ_ID" msprop:Generator_ColumnVarNameInTable="columnPROJ_ID" msprop:Generator_ColumnPropNameInRow="PROJ_ID" msprop:Generator_ColumnPropNameInTable="PROJ_IDColumn" msprop:Generator_UserColumnName="PROJ_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JOB_CODE" msprop:Generator_ColumnVarNameInTable="columnJOB_CODE" msprop:Generator_ColumnPropNameInRow="JOB_CODE" msprop:Generator_ColumnPropNameInTable="JOB_CODEColumn" msprop:Generator_UserColumnName="JOB_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JV_OF" msprop:Generator_ColumnVarNameInTable="columnJV_OF" msprop:Generator_ColumnPropNameInRow="JV_OF" msprop:Generator_ColumnPropNameInTable="JV_OFColumn" msprop:Generator_UserColumnName="JV_OF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO1" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO1" msprop:Generator_ColumnPropNameInRow="APP_LOGO1" msprop:Generator_ColumnPropNameInTable="APP_LOGO1Column" msprop:Generator_UserColumnName="APP_LOGO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO2" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO2" msprop:Generator_ColumnPropNameInRow="APP_LOGO2" msprop:Generator_ColumnPropNameInTable="APP_LOGO2Column" msprop:Generator_UserColumnName="APP_LOGO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO3" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO3" msprop:Generator_ColumnPropNameInRow="APP_LOGO3" msprop:Generator_ColumnPropNameInTable="APP_LOGO3Column" msprop:Generator_UserColumnName="APP_LOGO3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE1" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE1" msprop:Generator_ColumnPropNameInRow="REP_TITLE1" msprop:Generator_ColumnPropNameInTable="REP_TITLE1Column" msprop:Generator_UserColumnName="REP_TITLE1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE2" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE2" msprop:Generator_ColumnPropNameInRow="REP_TITLE2" msprop:Generator_ColumnPropNameInTable="REP_TITLE2Column" msprop:Generator_UserColumnName="REP_TITLE2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_CON_NAME" msprop:Generator_ColumnVarNameInTable="columnSUB_CON_NAME" msprop:Generator_ColumnPropNameInRow="SUB_CON_NAME" msprop:Generator_ColumnPropNameInTable="SUB_CON_NAMEColumn" msprop:Generator_UserColumnName="SUB_CON_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MILESTONE" msprop:Generator_ColumnVarNameInTable="columnMILESTONE" msprop:Generator_ColumnPropNameInRow="MILESTONE" msprop:Generator_ColumnPropNameInTable="MILESTONEColumn" msprop:Generator_UserColumnName="MILESTONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AREA_PRIORITY" msprop:Generator_ColumnVarNameInTable="columnAREA_PRIORITY" msprop:Generator_ColumnPropNameInRow="AREA_PRIORITY" msprop:Generator_ColumnPropNameInTable="AREA_PRIORITYColumn" msprop:Generator_UserColumnName="AREA_PRIORITY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AREA" msprop:Generator_ColumnVarNameInTable="columnAREA" msprop:Generator_ColumnPropNameInRow="AREA" msprop:Generator_ColumnPropNameInTable="AREAColumn" msprop:Generator_UserColumnName="AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_AREA" msprop:Generator_ColumnVarNameInTable="columnSUB_AREA" msprop:Generator_ColumnPropNameInRow="SUB_AREA" msprop:Generator_ColumnPropNameInTable="SUB_AREAColumn" msprop:Generator_UserColumnName="SUB_AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SCOPE_SHEET" msprop:Generator_ColumnVarNameInTable="columnSCOPE_SHEET" msprop:Generator_ColumnPropNameInRow="SCOPE_SHEET" msprop:Generator_ColumnPropNameInTable="SCOPE_SHEETColumn" msprop:Generator_UserColumnName="SCOPE_SHEET" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SHOP_INCH_DIA" msprop:Generator_ColumnVarNameInTable="columnSHOP_INCH_DIA" msprop:Generator_ColumnPropNameInRow="SHOP_INCH_DIA" msprop:Generator_ColumnPropNameInTable="SHOP_INCH_DIAColumn" msprop:Generator_UserColumnName="SHOP_INCH_DIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FIELD_INCH_DIA" msprop:Generator_ColumnVarNameInTable="columnFIELD_INCH_DIA" msprop:Generator_ColumnPropNameInRow="FIELD_INCH_DIA" msprop:Generator_ColumnPropNameInTable="FIELD_INCH_DIAColumn" msprop:Generator_UserColumnName="FIELD_INCH_DIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JOINTS" msprop:Generator_ColumnVarNameInTable="columnJOINTS" msprop:Generator_ColumnPropNameInRow="JOINTS" msprop:Generator_ColumnPropNameInTable="JOINTSColumn" msprop:Generator_UserColumnName="JOINTS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SPL_JOB_CARD" msprop:Generator_ColumnVarNameInTable="columnSPL_JOB_CARD" msprop:Generator_ColumnPropNameInRow="SPL_JOB_CARD" msprop:Generator_ColumnPropNameInTable="SPL_JOB_CARDColumn" msprop:Generator_UserColumnName="SPL_JOB_CARD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JOB_CARD_ISSUED" msprop:Generator_ColumnVarNameInTable="columnJOB_CARD_ISSUED" msprop:Generator_ColumnPropNameInRow="JOB_CARD_ISSUED" msprop:Generator_ColumnPropNameInTable="JOB_CARD_ISSUEDColumn" msprop:Generator_UserColumnName="JOB_CARD_ISSUED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WORK_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnWORK_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="WORK_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="WORK_DESCRIPTIONColumn" msprop:Generator_UserColumnName="WORK_DESCRIPTION" type="xs:string" minOccurs="0" />
+              <xs:element name="TRANSMITTAL_NUMBER" msprop:Generator_ColumnVarNameInTable="columnTRANSMITTAL_NUMBER" msprop:Generator_ColumnPropNameInRow="TRANSMITTAL_NUMBER" msprop:Generator_ColumnPropNameInTable="TRANSMITTAL_NUMBERColumn" msprop:Generator_UserColumnName="TRANSMITTAL_NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROGRESS" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROGRESS" msprop:Generator_ColumnPropNameInRow="CPECC_PROGRESS" msprop:Generator_ColumnPropNameInTable="CPECC_PROGRESSColumn" msprop:Generator_UserColumnName="CPECC_PROGRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROVIDED" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROVIDED" msprop:Generator_ColumnPropNameInRow="CPECC_PROVIDED" msprop:Generator_ColumnPropNameInTable="CPECC_PROVIDEDColumn" msprop:Generator_UserColumnName="CPECC_PROVIDED" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATED_AMOGH" msprop:Generator_ColumnVarNameInTable="columnUPDATED_AMOGH" msprop:Generator_ColumnPropNameInRow="UPDATED_AMOGH" msprop:Generator_ColumnPropNameInTable="UPDATED_AMOGHColumn" msprop:Generator_UserColumnName="UPDATED_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="BAL_UPDATE_AMOGH" msprop:Generator_ColumnVarNameInTable="columnBAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInRow="BAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInTable="BAL_UPDATE_AMOGHColumn" msprop:Generator_UserColumnName="BAL_UPDATE_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARKS" msprop:Generator_ColumnVarNameInTable="columnREMARKS" msprop:Generator_ColumnPropNameInRow="REMARKS" msprop:Generator_ColumnPropNameInTable="REMARKSColumn" msprop:Generator_UserColumnName="REMARKS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VIEW_TRANSMITAL_SPOOLEGEN" msprop:Generator_TableClassName="VIEW_TRANSMITAL_SPOOLEGENDataTable" msprop:Generator_TableVarName="tableVIEW_TRANSMITAL_SPOOLEGEN" msprop:Generator_TablePropName="VIEW_TRANSMITAL_SPOOLEGEN" msprop:Generator_RowDeletingName="VIEW_TRANSMITAL_SPOOLEGENRowDeleting" msprop:Generator_RowChangingName="VIEW_TRANSMITAL_SPOOLEGENRowChanging" msprop:Generator_RowEvHandlerName="VIEW_TRANSMITAL_SPOOLEGENRowChangeEventHandler" msprop:Generator_RowDeletedName="VIEW_TRANSMITAL_SPOOLEGENRowDeleted" msprop:Generator_UserTableName="VIEW_TRANSMITAL_SPOOLEGEN" msprop:Generator_RowChangedName="VIEW_TRANSMITAL_SPOOLEGENRowChanged" msprop:Generator_RowEvArgName="VIEW_TRANSMITAL_SPOOLEGENRowChangeEvent" msprop:Generator_RowClassName="VIEW_TRANSMITAL_SPOOLEGENRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROJ_ID" msprop:Generator_ColumnVarNameInTable="columnPROJ_ID" msprop:Generator_ColumnPropNameInRow="PROJ_ID" msprop:Generator_ColumnPropNameInTable="PROJ_IDColumn" msprop:Generator_UserColumnName="PROJ_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JOB_CODE" msprop:Generator_ColumnVarNameInTable="columnJOB_CODE" msprop:Generator_ColumnPropNameInRow="JOB_CODE" msprop:Generator_ColumnPropNameInTable="JOB_CODEColumn" msprop:Generator_UserColumnName="JOB_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JV_OF" msprop:Generator_ColumnVarNameInTable="columnJV_OF" msprop:Generator_ColumnPropNameInRow="JV_OF" msprop:Generator_ColumnPropNameInTable="JV_OFColumn" msprop:Generator_UserColumnName="JV_OF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO1" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO1" msprop:Generator_ColumnPropNameInRow="APP_LOGO1" msprop:Generator_ColumnPropNameInTable="APP_LOGO1Column" msprop:Generator_UserColumnName="APP_LOGO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO2" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO2" msprop:Generator_ColumnPropNameInRow="APP_LOGO2" msprop:Generator_ColumnPropNameInTable="APP_LOGO2Column" msprop:Generator_UserColumnName="APP_LOGO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APP_LOGO3" msprop:Generator_ColumnVarNameInTable="columnAPP_LOGO3" msprop:Generator_ColumnPropNameInRow="APP_LOGO3" msprop:Generator_ColumnPropNameInTable="APP_LOGO3Column" msprop:Generator_UserColumnName="APP_LOGO3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE1" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE1" msprop:Generator_ColumnPropNameInRow="REP_TITLE1" msprop:Generator_ColumnPropNameInTable="REP_TITLE1Column" msprop:Generator_UserColumnName="REP_TITLE1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REP_TITLE2" msprop:Generator_ColumnVarNameInTable="columnREP_TITLE2" msprop:Generator_ColumnPropNameInRow="REP_TITLE2" msprop:Generator_ColumnPropNameInTable="REP_TITLE2Column" msprop:Generator_UserColumnName="REP_TITLE2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_CON_ID" msprop:Generator_ColumnVarNameInTable="columnSUB_CON_ID" msprop:Generator_ColumnPropNameInRow="SUB_CON_ID" msprop:Generator_ColumnPropNameInTable="SUB_CON_IDColumn" msprop:Generator_UserColumnName="SUB_CON_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SUB_CON_NAME" msprop:Generator_ColumnVarNameInTable="columnSUB_CON_NAME" msprop:Generator_ColumnPropNameInRow="SUB_CON_NAME" msprop:Generator_ColumnPropNameInTable="SUB_CON_NAMEColumn" msprop:Generator_UserColumnName="SUB_CON_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MILESTONE" msprop:Generator_ColumnVarNameInTable="columnMILESTONE" msprop:Generator_ColumnPropNameInRow="MILESTONE" msprop:Generator_ColumnPropNameInTable="MILESTONEColumn" msprop:Generator_UserColumnName="MILESTONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AREA_PRIORITY" msprop:Generator_ColumnVarNameInTable="columnAREA_PRIORITY" msprop:Generator_ColumnPropNameInRow="AREA_PRIORITY" msprop:Generator_ColumnPropNameInTable="AREA_PRIORITYColumn" msprop:Generator_UserColumnName="AREA_PRIORITY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AREA" msprop:Generator_ColumnVarNameInTable="columnAREA" msprop:Generator_ColumnPropNameInRow="AREA" msprop:Generator_ColumnPropNameInTable="AREAColumn" msprop:Generator_UserColumnName="AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_AREA" msprop:Generator_ColumnVarNameInTable="columnSUB_AREA" msprop:Generator_ColumnPropNameInRow="SUB_AREA" msprop:Generator_ColumnPropNameInTable="SUB_AREAColumn" msprop:Generator_UserColumnName="SUB_AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SCOPE_SHEET" msprop:Generator_ColumnVarNameInTable="columnSCOPE_SHEET" msprop:Generator_ColumnPropNameInRow="SCOPE_SHEET" msprop:Generator_ColumnPropNameInTable="SCOPE_SHEETColumn" msprop:Generator_UserColumnName="SCOPE_SHEET" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LOT_NO" msprop:Generator_ColumnVarNameInTable="columnLOT_NO" msprop:Generator_ColumnPropNameInRow="LOT_NO" msprop:Generator_ColumnPropNameInTable="LOT_NOColumn" msprop:Generator_UserColumnName="LOT_NO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WORK_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnWORK_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="WORK_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="WORK_DESCRIPTIONColumn" msprop:Generator_UserColumnName="WORK_DESCRIPTION" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROGRESS" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROGRESS" msprop:Generator_ColumnPropNameInRow="CPECC_PROGRESS" msprop:Generator_ColumnPropNameInTable="CPECC_PROGRESSColumn" msprop:Generator_UserColumnName="CPECC_PROGRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="CPECC_PROVIDED" msprop:Generator_ColumnVarNameInTable="columnCPECC_PROVIDED" msprop:Generator_ColumnPropNameInRow="CPECC_PROVIDED" msprop:Generator_ColumnPropNameInTable="CPECC_PROVIDEDColumn" msprop:Generator_UserColumnName="CPECC_PROVIDED" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATED_AMOGH" msprop:Generator_ColumnVarNameInTable="columnUPDATED_AMOGH" msprop:Generator_ColumnPropNameInRow="UPDATED_AMOGH" msprop:Generator_ColumnPropNameInTable="UPDATED_AMOGHColumn" msprop:Generator_UserColumnName="UPDATED_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="BAL_UPDATE_AMOGH" msprop:Generator_ColumnVarNameInTable="columnBAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInRow="BAL_UPDATE_AMOGH" msprop:Generator_ColumnPropNameInTable="BAL_UPDATE_AMOGHColumn" msprop:Generator_UserColumnName="BAL_UPDATE_AMOGH" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARKS" msprop:Generator_ColumnVarNameInTable="columnREMARKS" msprop:Generator_ColumnPropNameInRow="REMARKS" msprop:Generator_ColumnPropNameInTable="REMARKSColumn" msprop:Generator_UserColumnName="REMARKS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
